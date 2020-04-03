@@ -1,11 +1,11 @@
 # Audiobook_Player
 
-# Player checklist
+# Play_book checklist
 1. Player.h and .c Function VLC wrapper library needs to be completed.
 2. tested and implemented within test.c
-3. Design and implement Player.c once test.c is complete
+3. Design and implement Play_book.c once test.c is complete
 4. Annotation throughout
-5. Player.c needs user input routines and design how we intend to get user input such as:
+5. Play_book.c needs user input routines and design how we intend to get user input such as:
   1. providing an audiobook, bookmarking, playing , pausing etc.
   
   
