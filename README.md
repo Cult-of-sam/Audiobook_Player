@@ -1,6 +1,6 @@
 # Audiobook_Player
 
-# Play_book checklist
+# ./Play_book checklist
 1. Player.h and .c Function VLC wrapper library needs to be completed.
 2. tested and implemented within test.c
 3. Design and implement Play_book.c once test.c is complete
@@ -9,7 +9,7 @@
   1. providing an audiobook, bookmarking, playing , pausing etc.
   
   
-# Manage_audiobooks checlist
+# ./Manage_audiobooks checklist
 1. Design & Create the library of the data structures and the functions which use those data structures to manage audiobooks and obtain
 information such as their name, and any bookmarks which an audiobook record has.
 2. Implement and test the library in a test.c
