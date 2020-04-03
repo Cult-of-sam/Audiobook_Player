@@ -84,6 +84,7 @@ Functions
     3. query book record ()
     4. obtain book record bookmark ()
     5. send_bookmark_to_player()
+    6. edit book_record()
 
 Psuedo code
 
