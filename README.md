@@ -19,5 +19,5 @@
 
 # Pipe library for communication between the two programs
 
-1. Start once most of the functionality of the two programs are complete and then the bookmarking system can be implemented through
+1. Start once most of the functionality of the two programs are complete and then the bookmarking system(sending and recieving bookmarks for x audiobook) can be implemented through
 the communication of pipes maybe.
