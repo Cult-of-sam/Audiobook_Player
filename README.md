@@ -10,7 +10,7 @@
   
   
 # ./Manage_audiobooks checklist
-1. Design & Create the library of the data structures and the functions which use those data structures to manage audiobooks and obtain information such as their name, and any bookmarks which an audiobook record has. Creating/editing bookmarks etc.
+1. Design & Create the library of data structures/functions  manage audiobook records and obtain information such as their name, and any bookmarks which an audiobook record has. Creating/editing bookmarks etc.
 2. Implement and test the library in a test.c
 3. Design and implement Manage_audiobooks once test.c is complete
 4. Annotation throughout
