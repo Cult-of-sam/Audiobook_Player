@@ -1,15 +1,21 @@
 
 #include"player.h"
 
-
+/*Under the assumption that the user will be entering time in seconds, so convert to miliseconds before
+ * using any of the functions which work with miliseconds (returns the miliseconds)
+ * @seconds - the seconds to convert to miliseconds*/
 int64_t convert_to_ms(int64_t seconds)
 {
-	int64_t result = seconds * 10000;
+	int64_t result = seconds * 1000;
 	return result;
 }
-
+/*setup the vlc backend (returns -1 on failure and 1 on success) 
+ * @filename - the audiobook to open*/
 int init_vlc(char *filename)
 {
+//	m = mmap(NULL,sizeof m,PROT_READ | PROT_WRITE, MAP_SHARED | MAP_ANONYMOUS,-1,0);
+	mp = mmap(NULL,sizeof mp,PROT_READ | PROT_WRITE , MAP_SHARED | MAP_ANONYMOUS,-1,0);
+
 	/*load the engine*/
 	inst = libvlc_new(0,NULL);
 	if(inst==NULL)
@@ -38,8 +44,30 @@ int init_vlc(char *filename)
 
 	return 1;
 }
+/*get the length of audiobook to determine how long the program needs to run for (returns the total_length)
+ * */
+int64_t get_total_audio_length()
+{
+	int64_t total_length = libvlc_media_player_get_length(mp);
+	return total_length;
+}
 
-int play(int64_t position_in_seconds)
+/*get the current time position of the playing audiobook (returns the current_time)*/
+int64_t get_current_time()
+{
+	int64_t current_time = libvlc_media_player_get_time(mp);
+	return current_time;
+}
+
+/*set the current time of audiobook (returns -1 on failure and 1 on success)
+ * @m_seconds - the miliseconds to set the audio to*/
+void set_current_time(int64_t m_seconds)
+{
+	libvlc_media_player_set_time(mp,m_seconds);	
+}
+/*play the audiobook (returns -1 on failure and 1 on success)
+ * @position_in_seconds - either 0 or the bookmark if an record exists , thus meaning a bookmark already exists*/
+int play(int64_t position_in_m_seconds)
 {
 	int error;
 	/*run the media player*/
@@ -49,40 +77,79 @@ int play(int64_t position_in_seconds)
 		return -1;
 	}
 	/*set the current time or it will be taken from get_bookmark()*/
-	libvlc_media_player_set_time(mp,convert_to_ms(position_in_seconds));
+//	libvlc_media_player_set_time(mp,position_in_m_seconds);
+	set_current_time(position_in_m_seconds);
 
 	return 1;
+
 }
-void pause_resume(){}
-int quit()
+
+/*pause_resume the audiobook
+ * @pause_status - used to determine whether to pause or resume the audio*/
+void pause_resume(int *pause_status)
+{ //under the assumption by default pause_status = 1
+	if(*pause_status==1) //pause
+	{
+		libvlc_media_player_set_pause(mp,*pause_status);
+		*pause_status = 0;
+	}
+	else if(*pause_status==0) //resume
+	{
+		libvlc_media_player_set_pause(mp,*pause_status);
+		*pause_status = 1;
+	}
+
+}
+/*safely shutdown the vlc backend and eject the media (returns -1 on failure and 1 on success)*/
+void quit()
 {
 	/*stop playing*/
-	if(libvlc_media_player_stop(mp)==-1)
-	{
-		perror("libvlc_media_player_stop():failed:");
-		return -1;
-	}
+	libvlc_media_player_stop(mp);
+	
 
 	/*free memory*/
 	libvlc_media_player_release(mp);
 	libvlc_release(inst);
 
-	return 1;
 }
 
-int64_t get_total_audio_length()
+/*rewind the audio by seconds (returns -1 on failure and 1 on success)
+ * @seconds - the seconds to rewind the audio by*/
+void rewind_audio(int64_t m_seconds)
 {
-	int64_t total_length = libvlc_media_player_get_length(mp);
-	return total_length;
-}
+	int64_t audio_position = get_current_time();
+	audio_position -= m_seconds;
+	set_current_time(audio_position);
 
-int64_t get_current_time()
-{
-	int64_t current_time = libvlc_media_player_get_time(mp);
-	return current_time;
 }
-void rewind_audio(){}
-void forward_audio(){}
-void set_bookmark(){}
+/*forward the audio by seconds (returns -1 on failure and 1 on success)
+ * @seconds - the seconds to forward the audio by*/
+void forward_audio(int64_t m_seconds)
+{
+	int64_t audio_position = get_current_time();
+	audio_position += m_seconds;
+	set_current_time(audio_position);
+}
+void set_bookmark(int64_t m_seconds,char *name)
+{
+	char buf[100]="\0";
+//	sprintf(buf,"/home/sam/Programs/My_programs/vlc/bin/bookmark_management/book_management c %s %d",name,m_seconds);
+//	system(buf); 
+//	system("/home/sam/Programs/My_programs/vlc/bin/bookmark_management/book_management c book4 100");
+}
 void play_until_then_bookmark(){}
-void get_bookmark(){}
+int64_t get_bookmark(char *name)
+{
+	char buf[100]="\0";
+//	sprintf(buf,"/home/sam/Programs/My_programs/vlc/bin/bookmark_management/book_management g %s",name);
+//	system(buf);
+
+//	FILE *fd = fopen("book","r");
+//	fgets(buf,sizeof(buf),fd);
+//	fclose(fd);
+
+//	if(strcmp(buf,"null")==0)
+//			return -1;
+
+//	return atoi(buf);
+}
