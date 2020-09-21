@@ -1,11 +1,12 @@
-#include<vlc/vlc.h>
-#include<stdlib.h>
-#include<string.h>
-#include<sys/mman.h>
+#include <vlc/vlc.h>
+#include <stdlib.h>
+#include <string.h>
+#include <sys/mman.h>
+
 /*data structures for the following functions*/
-libvlc_instance_t *inst;
-libvlc_media_player_t *mp;
-libvlc_media_t *m;
+extern libvlc_instance_t *inst;
+extern libvlc_media_player_t *mp;
+extern libvlc_media_t *m;
 
 //mp = mmap(NULL,sizeof mp,PROT_READ | PROT_WRITE , MAP_SHARED | MAP_ANONYMOUS,-1,0);
 
