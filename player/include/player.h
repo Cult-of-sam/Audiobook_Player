@@ -1,3 +1,5 @@
+#pragma once
+
 #include <vlc/vlc.h>
 #include <stdlib.h>
 #include <string.h>
@@ -25,5 +27,3 @@ void forward_audio(int64_t m_seconds);
 void set_bookmark(int64_t m_seconds,char *name);
 void play_until_then_bookmark();
 int64_t get_bookmark(char *name);
-
-
