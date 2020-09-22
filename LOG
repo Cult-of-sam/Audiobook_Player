@@ -1,0 +1,1634 @@
+VLC media player - 3.0.11 Vetinari
+Copyright © 1996-2020 the VideoLAN team
+revision 3.0.11-0-gdc0c5ced72
+configured with ./configure  '--build=x86_64-linux-gnu' '--prefix=/usr' '--includedir=${prefix}/include' '--mandir=${prefix}/share/man' '--infodir=${prefix}/share/info' '--sysconfdir=/etc' '--localstatedir=/var' '--disable-silent-rules' '--libdir=${prefix}/lib/x86_64-linux-gnu' '--runstatedir=/run' '--disable-maintainer-mode' '--disable-dependency-tracking' '--disable-debug' '--config-cache' '--disable-update-check' '--enable-fast-install' '--docdir=/usr/share/doc/vlc' '--with-binary-version=3.0.11-0+deb10u1' '--enable-a52' '--enable-aa' '--enable-aom' '--enable-aribsub' '--enable-avahi' '--enable-bluray' '--enable-caca' '--enable-chromaprint' '--enable-chromecast' '--enable-dbus' '--enable-dca' '--enable-dvbpsi' '--enable-dvdnav' '--enable-faad' '--enable-flac' '--enable-fluidsynth' '--enable-freetype' '--enable-fribidi' '--enable-gles2' '--enable-gnutls' '--enable-harfbuzz' '--enable-jack' '--enable-kate' '--enable-libass' '--enable-libmpeg2' '--enable-libxml2' '--enable-lirc' '--enable-live555' '--enable-mad' '--enable-matroska' '--enable-mod' '--enable-mpc' '--enable-mpg123' '--enable-mtp' '--enable-ncurses' '--enable-notify' '--enable-ogg' '--enable-opus' '--enable-pulse' '--enable-qt' '--enable-realrtsp' '--enable-samplerate' '--enable-sdl-image' '--enable-sftp' '--enable-shine' '--enable-shout' '--enable-skins2' '--enable-sndio' '--enable-soxr' '--enable-spatialaudio' '--enable-speex' '--enable-svg' '--enable-svgdec' '--enable-taglib' '--enable-theora' '--enable-twolame' '--enable-upnp' '--enable-vdpau' '--enable-vnc' '--enable-vorbis' '--enable-x264' '--enable-x265' '--enable-zvbi' '--with-kde-solid=/usr/share/solid/actions/' '--disable-d3d11va' '--disable-decklink' '--disable-directx' '--disable-dsm' '--disable-dxva2' '--disable-fdkaac' '--disable-fluidlite' '--disable-freerdp' '--disable-goom' '--disable-gst-decode' '--disable-libtar' '--disable-macosx' '--disable-macosx-avfoundation' '--disable-macosx-qtkit' '--disable-microdns' '--disable-mfx' '--disable-opencv' '--disable-projectm' '--disable-schroedinger' '--disable-sparkle' '--disable-srt' '--disable-telx' '--disable-vpx' '--disable-vsxu' '--disable-wasapi' '--enable-alsa' '--enable-dc1394' '--enable-dv1394' '--enable-libplacebo' '--enable-linsys' '--enable-nfs' '--enable-omxil' '--enable-udev' '--enable-v4l2' '--enable-wayland' '--enable-libva' '--enable-vcd' '--enable-smbclient' '--disable-oss' '--enable-crystalhd' '--enable-mmx' '--enable-sse' '--disable-neon' '--disable-altivec' 'build_alias=x86_64-linux-gnu' 'CFLAGS=-g -O2 -fdebug-prefix-map=/build/vlc-fpAdgn/vlc-3.0.11=. -fstack-protector-strong -Wformat -Werror=format-security ' 'LDFLAGS=-Wl,-z,relro -Wl,-z,now -Wl,--as-needed' 'CPPFLAGS=-Wdate-time -D_FORTIFY_SOURCE=2' 'CXXFLAGS=-g -O2 -fdebug-prefix-map=/build/vlc-fpAdgn/vlc-3.0.11=. -fstack-protector-strong -Wformat -Werror=format-security ' 'OBJCFLAGS=-g -O2 -fdebug-prefix-map=/build/vlc-fpAdgn/vlc-3.0.11=. -fstack-protector-strong -Wformat -Werror=format-security'
+creating audio output
+looking for audio output module matching "any": 6 candidates
+using library version 12.2.0
+ (compiled with version 12.2.0, protocol 32)
+PulseAudio server connection failure: Connection refused
+Available ALSA PCM devices:
+Discard all samples (playback) or generate zero samples (capture) (null)
+JACK Audio Connection Kit (jack)
+PulseAudio Sound Server (pulse)
+HDA Intel, CX20561 Analog Default Audio Device (default:CARD=Intel)
+HDA Intel, CX20561 Analog Default Audio Device (sysdefault:CARD=Intel)
+HDA Intel, CX20561 Analog Front speakers (front:CARD=Intel,DEV=0)
+HDA Intel, CX20561 Analog 2.1 Surround output to Front and Subwoofer speakers (surround21:CARD=Intel,DEV=0)
+HDA Intel, CX20561 Analog 4.0 Surround output to Front and Rear speakers (surround40:CARD=Intel,DEV=0)
+HDA Intel, CX20561 Analog 4.1 Surround output to Front, Rear and Subwoofer speakers (surround41:CARD=Intel,DEV=0)
+HDA Intel, CX20561 Analog 5.0 Surround output to Front, Center and Rear speakers (surround50:CARD=Intel,DEV=0)
+HDA Intel, CX20561 Analog 5.1 Surround output to Front, Center, Rear and Subwoofer speakers (surround51:CARD=Intel,DEV=0)
+HDA Intel, CX20561 Analog 7.1 Surround output to Front, Center, Side, Rear and Woofer speakers (surround71:CARD=Intel,DEV=0)
+HDA Intel, CX20561 Digital IEC958 (S/PDIF) Digital Audio Output (iec958:CARD=Intel,DEV=0)
+HDA Intel, CX20561 Analog Direct sample mixing device (dmix:CARD=Intel,DEV=0)
+HDA Intel, CX20561 Digital Direct sample mixing device (dmix:CARD=Intel,DEV=1)
+HDA Intel, CX20561 Analog Direct sample snooping device (dsnoop:CARD=Intel,DEV=0)
+HDA Intel, CX20561 Digital Direct sample snooping device (dsnoop:CARD=Intel,DEV=1)
+HDA Intel, CX20561 Analog Direct hardware device without any conversions (hw:CARD=Intel,DEV=0)
+HDA Intel, CX20561 Digital Direct hardware device without any conversions (hw:CARD=Intel,DEV=1)
+HDA Intel, CX20561 Analog Hardware device with all software conversions (plughw:CARD=Intel,DEV=0)
+HDA Intel, CX20561 Digital Hardware device with all software conversions (plughw:CARD=Intel,DEV=1)
+HDA Intel USB Stream Output (usbstream:CARD=Intel)
+ThinkPad Console Audio Control USB Stream Output (usbstream:CARD=ThinkPadEC)
+using audio output module "alsa"
+keeping audio output
+Creating an input for '1984.m4a'
+using timeshift granularity of 50 MiB
+using default timeshift path
+`file:///home/sam/Code/Projects/vlc/git_repo/1984.m4a' gives access `file' demux `any' path `/home/sam/Code/Projects/vlc/git_repo/1984.m4a'
+creating demux: access='file' demux='any' location='/home/sam/Code/Projects/vlc/git_repo/1984.m4a' file='/home/sam/Code/Projects/vlc/git_repo/1984.m4a'
+looking for access_demux module matching "file": 17 candidates
+no access_demux modules matched
+creating access: file:///home/sam/Code/Projects/vlc/git_repo/1984.m4a
+ (path: /home/sam/Code/Projects/vlc/git_repo/1984.m4a)
+looking for access module matching "file": 28 candidates
+using access module "filesystem"
+looking for stream_filter module matching "prefetch,cache_read": 26 candidates
+Using stream method for AStream*
+starting pre-buffering
+received first data after 0 ms
+pre-buffering done 1024 bytes in 0s - 35714 KiB/s
+using stream_filter module "cache_read"
+looking for stream_filter module matching "any": 26 candidates
+Trying Lua scripts in /home/sam/.local/share/vlc/lua/playlist
+Trying Lua scripts in /usr/lib/x86_64-linux-gnu/vlc/lua/playlist
+Trying Lua playlist script /usr/lib/x86_64-linux-gnu/vlc/lua/playlist/anevia_streams.luac
+Trying Lua playlist script /usr/lib/x86_64-linux-gnu/vlc/lua/playlist/anevia_xml.luac
+Trying Lua playlist script /usr/lib/x86_64-linux-gnu/vlc/lua/playlist/appletrailers.luac
+Trying Lua playlist script /usr/lib/x86_64-linux-gnu/vlc/lua/playlist/bbc_co_uk.luac
+Trying Lua playlist script /usr/lib/x86_64-linux-gnu/vlc/lua/playlist/cue.luac
+Trying Lua playlist script /usr/lib/x86_64-linux-gnu/vlc/lua/playlist/dailymotion.luac
+Trying Lua playlist script /usr/lib/x86_64-linux-gnu/vlc/lua/playlist/jamendo.luac
+Trying Lua playlist script /usr/lib/x86_64-linux-gnu/vlc/lua/playlist/koreus.luac
+Trying Lua playlist script /usr/lib/x86_64-linux-gnu/vlc/lua/playlist/liveleak.luac
+Trying Lua playlist script /usr/lib/x86_64-linux-gnu/vlc/lua/playlist/newgrounds.luac
+Trying Lua playlist script /usr/lib/x86_64-linux-gnu/vlc/lua/playlist/rockbox_fm_presets.luac
+Trying Lua playlist script /usr/lib/x86_64-linux-gnu/vlc/lua/playlist/soundcloud.luac
+Trying Lua playlist script /usr/lib/x86_64-linux-gnu/vlc/lua/playlist/twitch.luac
+Trying Lua playlist script /usr/lib/x86_64-linux-gnu/vlc/lua/playlist/vimeo.luac
+Trying Lua playlist script /usr/lib/x86_64-linux-gnu/vlc/lua/playlist/vocaroo.luac
+Trying Lua playlist script /usr/lib/x86_64-linux-gnu/vlc/lua/playlist/youtube.luac
+Trying Lua scripts in /usr/share/vlc/lua/playlist
+no stream_filter modules matched
+looking for stream_directory module matching "any": 1 candidates
+no stream_directory modules matched
+attachment of directory-extractor failed for file:///home/sam/Code/Projects/vlc/git_repo/1984.m4a
+looking for stream_filter module matching "record": 26 candidates
+using stream_filter module "record"
+creating demux: access='file' demux='any' location='/home/sam/Code/Projects/vlc/git_repo/1984.m4a' file='/home/sam/Code/Projects/vlc/git_repo/1984.m4a'
+looking for demux module matching "mp4": 55 candidates
+dumping root Box "root"
+|   + ftyp size 28 offset 0
+|   + free size 8 offset 28
+|   + mdat size 630914782 offset 36
+|   + moov size 6799940 offset 630914818
+|   |   + mvhd size 108 offset 630914826
+|   |   + trak size 6799726 offset 630914934
+|   |   |   + tkhd size 92 offset 630914942
+|   |   |   + edts size 36 offset 630915034
+|   |   |   |   + elst size 28 offset 630915042
+|   |   |   + mdia size 6799590 offset 630915070
+|   |   |   |   + mdhd size 32 offset 630915078
+|   |   |   |   + hdlr size 71 offset 630915110
+|   |   |   |   + minf size 6799479 offset 630915181
+|   |   |   |   |   + smhd size 16 offset 630915189
+|   |   |   |   |   + dinf size 36 offset 630915205
+|   |   |   |   |   |   + dref size 28 offset 630915213
+|   |   |   |   |   |   |   + url  size 12 offset 630915229
+|   |   |   |   |   + stbl size 6799419 offset 630915241
+|   |   |   |   |   |   + stsd size 117 offset 630915249
+|   |   |   |   |   |   |   + mp4a size 101 offset 630915265
+|   |   |   |   |   |   |   |   + esds size 65 offset 630915301
+|   |   |   |   |   |   + stts size 24 offset 630915366
+|   |   |   |   |   |   + stsc size 3964 offset 630915390
+|   |   |   |   |   |   + stsz size 6792828 offset 630919354
+|   |   |   |   |   |   + stco size 2424 offset 637712182
+|   |   |   |   |   |   + sgpd size 26 offset 637714606
+|   |   |   |   |   |   + sbgp size 28 offset 637714632
+|   |   + udta size 98 offset 637714660
+|   |   |   + meta size 90 offset 637714668
+|   |   |   |   + hdlr size 33 offset 637714680
+|   |   |   |   + ilst size 45 offset 637714713
+|   |   |   |   |   + ctoo size 37 offset 637714721
+|   |   |   |   |   |   + data size 29 offset 637714729
+ISO Media (isom) version 512.
+found 1 tracks
+elst box found
+   - [0] duration=39432174ms media time=0ms) rate=1.0
+track[Id 0x1] read 602 chunk
+STTS table of 1 entries
+track[Id 0x1] read 1698202 samples length:39432s
+selecting program id=0
+adding track[Id 0x1] audio (enable) language undef
+using demux module "mp4"
+looking for a subtitle file in /home/sam/Code/Projects/vlc/git_repo/
+looking for audio decoder module matching "any": 21 candidates
+using audio decoder module "faad"
+looking for meta reader module matching "any": 2 candidates
+using meta reader module "taglib"
+removing module "taglib"
+`file:///home/sam/Code/Projects/vlc/git_repo/1984.m4a' successfully opened
+elst (0) gives 0ms (movie)-> 0ms (track)
+Buffering 0%
+Buffering 25%
+seeking with 0ms preroll (use input-fast-seek to avoid)
+elst (0) gives 0ms (movie)-> 0ms (track)
+Buffering 0%
+Buffering 25%
+Buffering 50%
+Buffering 75%
+Buffering 100%
+Stream buffering done (1250 ms in 0 ms)
+decoded zero sample
+reusing audio output
+using ALSA device: default
+ Plug PCM: Soft volume PCM
+Control: PCM Playback Volume
+min_dB: -51
+max_dB: 0
+resolution: 256
+Slave: Direct Stream Mixing PCM
+Hardware PCM card 0 'HDA Intel' device 0 subdevice 0
+Its setup is:
+  stream       : PLAYBACK
+  access       : MMAP_INTERLEAVED
+  format       : S32_LE
+  subformat    : STD
+  channels     : 2
+  rate         : 48000
+  exact rate   : 48000 (48000/1)
+  msbits       : 32
+  buffer_size  : 16384
+  period_size  : 1024
+  period_time  : 21333
+  tstamp_mode  : ENABLE
+  tstamp_type  : MONOTONIC
+  period_step  : 1
+  avail_min    : 1024
+  period_event : 0
+  start_threshold  : 1
+  stop_threshold   : 0
+  silence_threshold: 0
+  silence_size : 0
+  boundary     : 4611686018427387904
+  appl_ptr     : 0
+  hw_ptr       : 4035172
+ device name   : CX20561 Analog
+ device ID     : CX20561 Analog
+ subdevice name: subdevice #0
+initial hardware setup:
+ACCESS:  MMAP_INTERLEAVED MMAP_NONINTERLEAVED MMAP_COMPLEX RW_INTERLEAVED RW_NONINTERLEAVED
+FORMAT:  S8 U8 S16_LE S16_BE U16_LE U16_BE S24_LE S24_BE U24_LE U24_BE S32_LE S32_BE U32_LE U32_BE FLOAT_LE FLOAT_BE FLOAT64_LE FLOAT64_BE MU_LAW A_LAW IMA_ADPCM S20_LE S20_BE U20_LE U20_BE S24_3LE S24_3BE U24_3LE U24_3BE S20_3LE S20_3BE U20_3LE U20_3BE S18_3LE S18_3BE U18_3LE U18_3BE
+SUBFORMAT:  STD
+SAMPLE_BITS: [4 64]
+FRAME_BITS: [4 640000]
+CHANNELS: [1 10000]
+RATE: 48000
+PERIOD_TIME: (21333 21334)
+PERIOD_SIZE: 1024
+PERIOD_BYTES: [512 81920000]
+PERIODS: [2 16]
+BUFFER_TIME: (42666 341334)
+BUFFER_SIZE: [2048 16384]
+BUFFER_BYTES: [1024 1310720000]
+TICK_TIME: ALL
+using channels map 0, type 1, 2 channel(s)
+final HW setup:
+ACCESS:  RW_INTERLEAVED
+FORMAT:  FLOAT_LE
+SUBFORMAT:  STD
+SAMPLE_BITS: 32
+FRAME_BITS: 64
+CHANNELS: 2
+RATE: 48000
+PERIOD_TIME: (21333 21334)
+PERIOD_SIZE: 1024
+PERIOD_BYTES: 8192
+PERIODS: 16
+BUFFER_TIME: (341333 341334)
+BUFFER_SIZE: 16384
+BUFFER_BYTES: 131072
+TICK_TIME: 0
+initial software parameters:
+tstamp_mode: NONE
+tstamp_type: MONOTONIC
+period_step: 1
+avail_min: 1024
+start_threshold: 1
+stop_threshold: 16384
+silence_threshold: 0
+silence_size: 0
+boundary: 4611686018427387904
+final software parameters:
+tstamp_mode: NONE
+tstamp_type: MONOTONIC
+period_step: 1
+avail_min: 1024
+start_threshold: 1
+stop_threshold: 16384
+silence_threshold: 0
+silence_size: 0
+boundary: 4611686018427387904
+device cannot be paused
+output 'f32l' 48000 Hz Stereo frame=1 samples/8 bytes
+looking for audio volume module matching "any": 2 candidates
+using audio volume module "float_mixer"
+input 'f32l' 44100 Hz Stereo frame=1 samples/8 bytes
+looking for audio filter module matching "scaletempo": 16 candidates
+format: 44100 rate, 2 nch, 4 bps, fl32
+params: 30 stride, 0.200 overlap, 14 search
+1.000 scale, 1323.000 stride_in, 1323 stride_out, 1059 standing, 264 overlap, 617 search, 2204 queue, fl32 mode
+using audio filter module "scaletempo"
+conversion: 'f32l'->'f32l' 44100 Hz->44100 Hz Stereo->Stereo
+conversion pipeline complete
+conversion: 'f32l'->'f32l' 44100 Hz->44100 Hz Stereo->Stereo
+conversion pipeline complete
+looking for audio resampler module matching "any": 4 candidates
+using audio resampler module "samplerate"
+Decoder wait done in 25 ms
+inserting 1564 zeroes
+seeking with 0ms preroll (use input-fast-seek to avoid)
+elst (0) gives 0ms (movie)-> 0ms (track)
+Buffering 0%
+Buffering 25%
+Buffering 50%
+Buffering 75%
+Buffering 100%
+Stream buffering done (1250 ms in 0 ms)
+Decoder wait done in 12 ms
+seeking with 0ms preroll (use input-fast-seek to avoid)
+elst (0) gives 18650ms (movie)-> 18650ms (track)
+Buffering 0%
+Buffering 25%
+Buffering 50%
+Buffering 75%
+Stream buffering done (1004 ms in 1 ms)
+end of audio preroll
+Decoder wait done in 27 ms
+seeking with 0ms preroll (use input-fast-seek to avoid)
+elst (0) gives 23650ms (movie)-> 23650ms (track)
+Buffering 0%
+Buffering 25%
+Buffering 50%
+Buffering 75%
+Stream buffering done (1012 ms in 1 ms)
+end of audio preroll
+Decoder wait done in 13 ms
+seeking with 0ms preroll (use input-fast-seek to avoid)
+elst (0) gives 28650ms (movie)-> 28650ms (track)
+Buffering 0%
+Buffering 26%
+Buffering 50%
+Buffering 75%
+Stream buffering done (1019 ms in 1 ms)
+end of audio preroll
+Decoder wait done in 1 ms
+seeking with 0ms preroll (use input-fast-seek to avoid)
+elst (0) gives 33650ms (movie)-> 33650ms (track)
+Buffering 0%
+Buffering 25%
+Buffering 50%
+Buffering 75%
+Stream buffering done (1004 ms in 2 ms)
+end of audio preroll
+Decoder wait done in 4 ms
+seeking with 0ms preroll (use input-fast-seek to avoid)
+elst (0) gives 38650ms (movie)-> 38650ms (track)
+Buffering 0%
+Buffering 25%
+Buffering 50%
+Buffering 75%
+Stream buffering done (1011 ms in 1 ms)
+end of audio preroll
+Decoder wait done in 14 ms
+seeking with 0ms preroll (use input-fast-seek to avoid)
+elst (0) gives 43650ms (movie)-> 43650ms (track)
+Buffering 0%
+Buffering 26%
+Buffering 50%
+end of audio preroll
+Buffering 75%
+Stream buffering done (1019 ms in 3 ms)
+Decoder wait done in 0 ms
+seeking with 0ms preroll (use input-fast-seek to avoid)
+elst (0) gives 48650ms (movie)-> 48650ms (track)
+Buffering 0%
+Buffering 25%
+Buffering 50%
+Buffering 75%
+Stream buffering done (1004 ms in 2 ms)
+end of audio preroll
+Decoder wait done in 5 ms
+seeking with 0ms preroll (use input-fast-seek to avoid)
+elst (0) gives 53650ms (movie)-> 53650ms (track)
+Buffering 0%
+Buffering 25%
+Buffering 50%
+Buffering 75%
+Stream buffering done (1011 ms in 1 ms)
+end of audio preroll
+Decoder wait done in 14 ms
+seeking with 0ms preroll (use input-fast-seek to avoid)
+elst (0) gives 58650ms (movie)-> 58650ms (track)
+Buffering 0%
+Buffering 26%
+Buffering 50%
+Buffering 75%
+Stream buffering done (1019 ms in 2 ms)
+end of audio preroll
+Decoder wait done in 0 ms
+seeking with 0ms preroll (use input-fast-seek to avoid)
+elst (0) gives 63650ms (movie)-> 63650ms (track)
+Buffering 0%
+Buffering 25%
+Buffering 50%
+Buffering 75%
+Stream buffering done (1004 ms in 2 ms)
+end of audio preroll
+Decoder wait done in 23 ms
+seeking with 0ms preroll (use input-fast-seek to avoid)
+elst (0) gives 70551ms (movie)-> 70550ms (track)
+Buffering 0%
+Buffering 87%
+Buffering 91%
+Buffering 95%
+Stream buffering done (6024 ms in 7 ms)
+end of audio preroll
+Decoder wait done in 17 ms
+seeking with 0ms preroll (use input-fast-seek to avoid)
+elst (0) gives 75551ms (movie)-> 75550ms (track)
+Buffering 0%
+Buffering 93%
+Buffering 95%
+Buffering 97%
+Stream buffering done (11024 ms in 7 ms)
+end of audio preroll
+Decoder wait done in 42 ms
+seeking with 0ms preroll (use input-fast-seek to avoid)
+elst (0) gives 80551ms (movie)-> 80550ms (track)
+Buffering 0%
+Buffering 95%
+Buffering 96%
+Buffering 98%
+Stream buffering done (16024 ms in 8 ms)
+end of audio preroll
+Decoder wait done in 62 ms
+seeking with 0ms preroll (use input-fast-seek to avoid)
+elst (0) gives 85551ms (movie)-> 85550ms (track)
+Buffering 0%
+Buffering 96%
+Buffering 97%
+Buffering 98%
+Stream buffering done (21024 ms in 13 ms)
+end of audio preroll
+Decoder wait done in 60 ms
+seeking with 0ms preroll (use input-fast-seek to avoid)
+elst (0) gives 90551ms (movie)-> 90550ms (track)
+Buffering 0%
+Buffering 97%
+Buffering 98%
+Buffering 99%
+Stream buffering done (26024 ms in 15 ms)
+end of audio preroll
+Decoder wait done in 78 ms
+seeking with 0ms preroll (use input-fast-seek to avoid)
+elst (0) gives 95551ms (movie)-> 95550ms (track)
+Buffering 0%
+Buffering 97%
+Buffering 98%
+Buffering 99%
+Stream buffering done (31024 ms in 17 ms)
+end of audio preroll
+Decoder wait done in 123 ms
+seeking with 0ms preroll (use input-fast-seek to avoid)
+elst (0) gives 100551ms (movie)-> 100550ms (track)
+Buffering 0%
+Buffering 97%
+Buffering 98%
+Buffering 99%
+Stream buffering done (36024 ms in 16 ms)
+end of audio preroll
+Decoder wait done in 92 ms
+seeking with 0ms preroll (use input-fast-seek to avoid)
+elst (0) gives 107702ms (movie)-> 107701ms (track)
+Buffering 0%
+Buffering 98%
+Buffering 99%
+Stream buffering done (43175 ms in 20 ms)
+end of audio preroll
+Decoder wait done in 124 ms
+seeking with 0ms preroll (use input-fast-seek to avoid)
+elst (0) gives 112702ms (movie)-> 112701ms (track)
+Buffering 0%
+Buffering 98%
+Buffering 99%
+Stream buffering done (48175 ms in 19 ms)
+end of audio preroll
+Decoder wait done in 135 ms
+seeking with 0ms preroll (use input-fast-seek to avoid)
+elst (0) gives 117702ms (movie)-> 117701ms (track)
+Buffering 0%
+Buffering 98%
+Buffering 99%
+Stream buffering done (53175 ms in 21 ms)
+end of audio preroll
+Decoder wait done in 140 ms
+seeking with 0ms preroll (use input-fast-seek to avoid)
+elst (0) gives 122702ms (movie)-> 122701ms (track)
+Buffering 0%
+Timestamp conversion failed (delay 1000000, buffering 0, bound 3000000)
+Could not convert timestamp 21070196127 for faad
+discarded audio buffer
+Buffering 98%
+seeking with 0ms preroll (use input-fast-seek to avoid)
+elst (0) gives 127702ms (movie)-> 127701ms (track)
+Buffering 0%
+clock gap, unexpected stream discontinuity
+feeding synchro with a new reference point trying to recover from clock gap
+Buffering 25%
+Buffering 50%
+Buffering 75%
+Buffering 100%
+Stream buffering done (1250 ms in 0 ms)
+end of audio preroll
+Decoder wait done in 168 ms
+buffer too late (-232279 us): dropped
+seeking with 0ms preroll (use input-fast-seek to avoid)
+elst (0) gives 132702ms (movie)-> 132701ms (track)
+Buffering 0%
+Buffering 71%
+Buffering 81%
+Buffering 90%
+Stream buffering done (2671 ms in 0 ms)
+end of audio preroll
+Decoder wait done in 4 ms
+inserting 461 zeroes
+seeking with 0ms preroll (use input-fast-seek to avoid)
+elst (0) gives 137702ms (movie)-> 137701ms (track)
+Buffering 0%
+Buffering 90%
+Buffering 93%
+Buffering 96%
+Stream buffering done (7671 ms in 6 ms)
+end of audio preroll
+Decoder wait done in 31 ms
+toggling resume
+toggling pause
+playback way too early (-367256): playing silence
+inserting 17628 zeroes
+toggling resume
+toggling pause
+playback way too early (-352214): playing silence
+inserting 16906 zeroes
+toggling resume
+toggling pause
+playback way too early (-354469): playing silence
+inserting 17014 zeroes
+seeking with 0ms preroll (use input-fast-seek to avoid)
+elst (0) gives 0ms (movie)-> 0ms (track)
+Buffering 0%
+Buffering 25%
+Buffering 50%
+Buffering 75%
+Buffering 100%
+Stream buffering done (1250 ms in 0 ms)
+Decoder wait done in 3 ms
+killing decoder fourcc `mp4a'
+removing module "faad"
+removing module "samplerate"
+removing module "scaletempo"
+removing module "float_mixer"
+keeping audio output
+removing module "mp4"
+freeing all memory
+Program doesn't contain anymore ES
+removing module "record"
+removing module "cache_read"
+removing module "filesystem"
+removing module "alsa"
+exiting
+no exit handler
+removing all interfaces
+removing module "memory"
+VLC media player - 3.0.11 Vetinari
+Copyright © 1996-2020 the VideoLAN team
+revision 3.0.11-0-gdc0c5ced72
+configured with ./configure  '--build=x86_64-linux-gnu' '--prefix=/usr' '--includedir=${prefix}/include' '--mandir=${prefix}/share/man' '--infodir=${prefix}/share/info' '--sysconfdir=/etc' '--localstatedir=/var' '--disable-silent-rules' '--libdir=${prefix}/lib/x86_64-linux-gnu' '--runstatedir=/run' '--disable-maintainer-mode' '--disable-dependency-tracking' '--disable-debug' '--config-cache' '--disable-update-check' '--enable-fast-install' '--docdir=/usr/share/doc/vlc' '--with-binary-version=3.0.11-0+deb10u1' '--enable-a52' '--enable-aa' '--enable-aom' '--enable-aribsub' '--enable-avahi' '--enable-bluray' '--enable-caca' '--enable-chromaprint' '--enable-chromecast' '--enable-dbus' '--enable-dca' '--enable-dvbpsi' '--enable-dvdnav' '--enable-faad' '--enable-flac' '--enable-fluidsynth' '--enable-freetype' '--enable-fribidi' '--enable-gles2' '--enable-gnutls' '--enable-harfbuzz' '--enable-jack' '--enable-kate' '--enable-libass' '--enable-libmpeg2' '--enable-libxml2' '--enable-lirc' '--enable-live555' '--enable-mad' '--enable-matroska' '--enable-mod' '--enable-mpc' '--enable-mpg123' '--enable-mtp' '--enable-ncurses' '--enable-notify' '--enable-ogg' '--enable-opus' '--enable-pulse' '--enable-qt' '--enable-realrtsp' '--enable-samplerate' '--enable-sdl-image' '--enable-sftp' '--enable-shine' '--enable-shout' '--enable-skins2' '--enable-sndio' '--enable-soxr' '--enable-spatialaudio' '--enable-speex' '--enable-svg' '--enable-svgdec' '--enable-taglib' '--enable-theora' '--enable-twolame' '--enable-upnp' '--enable-vdpau' '--enable-vnc' '--enable-vorbis' '--enable-x264' '--enable-x265' '--enable-zvbi' '--with-kde-solid=/usr/share/solid/actions/' '--disable-d3d11va' '--disable-decklink' '--disable-directx' '--disable-dsm' '--disable-dxva2' '--disable-fdkaac' '--disable-fluidlite' '--disable-freerdp' '--disable-goom' '--disable-gst-decode' '--disable-libtar' '--disable-macosx' '--disable-macosx-avfoundation' '--disable-macosx-qtkit' '--disable-microdns' '--disable-mfx' '--disable-opencv' '--disable-projectm' '--disable-schroedinger' '--disable-sparkle' '--disable-srt' '--disable-telx' '--disable-vpx' '--disable-vsxu' '--disable-wasapi' '--enable-alsa' '--enable-dc1394' '--enable-dv1394' '--enable-libplacebo' '--enable-linsys' '--enable-nfs' '--enable-omxil' '--enable-udev' '--enable-v4l2' '--enable-wayland' '--enable-libva' '--enable-vcd' '--enable-smbclient' '--disable-oss' '--enable-crystalhd' '--enable-mmx' '--enable-sse' '--disable-neon' '--disable-altivec' 'build_alias=x86_64-linux-gnu' 'CFLAGS=-g -O2 -fdebug-prefix-map=/build/vlc-fpAdgn/vlc-3.0.11=. -fstack-protector-strong -Wformat -Werror=format-security ' 'LDFLAGS=-Wl,-z,relro -Wl,-z,now -Wl,--as-needed' 'CPPFLAGS=-Wdate-time -D_FORTIFY_SOURCE=2' 'CXXFLAGS=-g -O2 -fdebug-prefix-map=/build/vlc-fpAdgn/vlc-3.0.11=. -fstack-protector-strong -Wformat -Werror=format-security ' 'OBJCFLAGS=-g -O2 -fdebug-prefix-map=/build/vlc-fpAdgn/vlc-3.0.11=. -fstack-protector-strong -Wformat -Werror=format-security'
+creating audio output
+looking for audio output module matching "any": 6 candidates
+using library version 12.2.0
+ (compiled with version 12.2.0, protocol 32)
+PulseAudio server connection failure: Connection refused
+Available ALSA PCM devices:
+Discard all samples (playback) or generate zero samples (capture) (null)
+JACK Audio Connection Kit (jack)
+PulseAudio Sound Server (pulse)
+HDA Intel, CX20561 Analog Default Audio Device (default:CARD=Intel)
+HDA Intel, CX20561 Analog Default Audio Device (sysdefault:CARD=Intel)
+HDA Intel, CX20561 Analog Front speakers (front:CARD=Intel,DEV=0)
+HDA Intel, CX20561 Analog 2.1 Surround output to Front and Subwoofer speakers (surround21:CARD=Intel,DEV=0)
+HDA Intel, CX20561 Analog 4.0 Surround output to Front and Rear speakers (surround40:CARD=Intel,DEV=0)
+HDA Intel, CX20561 Analog 4.1 Surround output to Front, Rear and Subwoofer speakers (surround41:CARD=Intel,DEV=0)
+HDA Intel, CX20561 Analog 5.0 Surround output to Front, Center and Rear speakers (surround50:CARD=Intel,DEV=0)
+HDA Intel, CX20561 Analog 5.1 Surround output to Front, Center, Rear and Subwoofer speakers (surround51:CARD=Intel,DEV=0)
+HDA Intel, CX20561 Analog 7.1 Surround output to Front, Center, Side, Rear and Woofer speakers (surround71:CARD=Intel,DEV=0)
+HDA Intel, CX20561 Digital IEC958 (S/PDIF) Digital Audio Output (iec958:CARD=Intel,DEV=0)
+HDA Intel, CX20561 Analog Direct sample mixing device (dmix:CARD=Intel,DEV=0)
+HDA Intel, CX20561 Digital Direct sample mixing device (dmix:CARD=Intel,DEV=1)
+HDA Intel, CX20561 Analog Direct sample snooping device (dsnoop:CARD=Intel,DEV=0)
+HDA Intel, CX20561 Digital Direct sample snooping device (dsnoop:CARD=Intel,DEV=1)
+HDA Intel, CX20561 Analog Direct hardware device without any conversions (hw:CARD=Intel,DEV=0)
+HDA Intel, CX20561 Digital Direct hardware device without any conversions (hw:CARD=Intel,DEV=1)
+HDA Intel, CX20561 Analog Hardware device with all software conversions (plughw:CARD=Intel,DEV=0)
+HDA Intel, CX20561 Digital Hardware device with all software conversions (plughw:CARD=Intel,DEV=1)
+HDA Intel USB Stream Output (usbstream:CARD=Intel)
+ThinkPad Console Audio Control USB Stream Output (usbstream:CARD=ThinkPadEC)
+using audio output module "alsa"
+keeping audio output
+Creating an input for '1984.m4a'
+using timeshift granularity of 50 MiB
+using default timeshift path
+`file:///home/sam/Code/Projects/vlc/git_repo/1984.m4a' gives access `file' demux `any' path `/home/sam/Code/Projects/vlc/git_repo/1984.m4a'
+creating demux: access='file' demux='any' location='/home/sam/Code/Projects/vlc/git_repo/1984.m4a' file='/home/sam/Code/Projects/vlc/git_repo/1984.m4a'
+looking for access_demux module matching "file": 17 candidates
+no access_demux modules matched
+creating access: file:///home/sam/Code/Projects/vlc/git_repo/1984.m4a
+ (path: /home/sam/Code/Projects/vlc/git_repo/1984.m4a)
+looking for access module matching "file": 28 candidates
+using access module "filesystem"
+looking for stream_filter module matching "prefetch,cache_read": 26 candidates
+Using stream method for AStream*
+starting pre-buffering
+received first data after 0 ms
+pre-buffering done 1024 bytes in 0s - 35714 KiB/s
+using stream_filter module "cache_read"
+looking for stream_filter module matching "any": 26 candidates
+Trying Lua scripts in /home/sam/.local/share/vlc/lua/playlist
+Trying Lua scripts in /usr/lib/x86_64-linux-gnu/vlc/lua/playlist
+Trying Lua playlist script /usr/lib/x86_64-linux-gnu/vlc/lua/playlist/anevia_streams.luac
+Trying Lua playlist script /usr/lib/x86_64-linux-gnu/vlc/lua/playlist/anevia_xml.luac
+Trying Lua playlist script /usr/lib/x86_64-linux-gnu/vlc/lua/playlist/appletrailers.luac
+Trying Lua playlist script /usr/lib/x86_64-linux-gnu/vlc/lua/playlist/bbc_co_uk.luac
+Trying Lua playlist script /usr/lib/x86_64-linux-gnu/vlc/lua/playlist/cue.luac
+Trying Lua playlist script /usr/lib/x86_64-linux-gnu/vlc/lua/playlist/dailymotion.luac
+Trying Lua playlist script /usr/lib/x86_64-linux-gnu/vlc/lua/playlist/jamendo.luac
+Trying Lua playlist script /usr/lib/x86_64-linux-gnu/vlc/lua/playlist/koreus.luac
+Trying Lua playlist script /usr/lib/x86_64-linux-gnu/vlc/lua/playlist/liveleak.luac
+Trying Lua playlist script /usr/lib/x86_64-linux-gnu/vlc/lua/playlist/newgrounds.luac
+Trying Lua playlist script /usr/lib/x86_64-linux-gnu/vlc/lua/playlist/rockbox_fm_presets.luac
+Trying Lua playlist script /usr/lib/x86_64-linux-gnu/vlc/lua/playlist/soundcloud.luac
+Trying Lua playlist script /usr/lib/x86_64-linux-gnu/vlc/lua/playlist/twitch.luac
+Trying Lua playlist script /usr/lib/x86_64-linux-gnu/vlc/lua/playlist/vimeo.luac
+Trying Lua playlist script /usr/lib/x86_64-linux-gnu/vlc/lua/playlist/vocaroo.luac
+Trying Lua playlist script /usr/lib/x86_64-linux-gnu/vlc/lua/playlist/youtube.luac
+Trying Lua scripts in /usr/share/vlc/lua/playlist
+no stream_filter modules matched
+looking for stream_directory module matching "any": 1 candidates
+no stream_directory modules matched
+attachment of directory-extractor failed for file:///home/sam/Code/Projects/vlc/git_repo/1984.m4a
+looking for stream_filter module matching "record": 26 candidates
+using stream_filter module "record"
+creating demux: access='file' demux='any' location='/home/sam/Code/Projects/vlc/git_repo/1984.m4a' file='/home/sam/Code/Projects/vlc/git_repo/1984.m4a'
+looking for demux module matching "mp4": 55 candidates
+dumping root Box "root"
+|   + ftyp size 28 offset 0
+|   + free size 8 offset 28
+|   + mdat size 630914782 offset 36
+|   + moov size 6799940 offset 630914818
+|   |   + mvhd size 108 offset 630914826
+|   |   + trak size 6799726 offset 630914934
+|   |   |   + tkhd size 92 offset 630914942
+|   |   |   + edts size 36 offset 630915034
+|   |   |   |   + elst size 28 offset 630915042
+|   |   |   + mdia size 6799590 offset 630915070
+|   |   |   |   + mdhd size 32 offset 630915078
+|   |   |   |   + hdlr size 71 offset 630915110
+|   |   |   |   + minf size 6799479 offset 630915181
+|   |   |   |   |   + smhd size 16 offset 630915189
+|   |   |   |   |   + dinf size 36 offset 630915205
+|   |   |   |   |   |   + dref size 28 offset 630915213
+|   |   |   |   |   |   |   + url  size 12 offset 630915229
+|   |   |   |   |   + stbl size 6799419 offset 630915241
+|   |   |   |   |   |   + stsd size 117 offset 630915249
+|   |   |   |   |   |   |   + mp4a size 101 offset 630915265
+|   |   |   |   |   |   |   |   + esds size 65 offset 630915301
+|   |   |   |   |   |   + stts size 24 offset 630915366
+|   |   |   |   |   |   + stsc size 3964 offset 630915390
+|   |   |   |   |   |   + stsz size 6792828 offset 630919354
+|   |   |   |   |   |   + stco size 2424 offset 637712182
+|   |   |   |   |   |   + sgpd size 26 offset 637714606
+|   |   |   |   |   |   + sbgp size 28 offset 637714632
+|   |   + udta size 98 offset 637714660
+|   |   |   + meta size 90 offset 637714668
+|   |   |   |   + hdlr size 33 offset 637714680
+|   |   |   |   + ilst size 45 offset 637714713
+|   |   |   |   |   + ctoo size 37 offset 637714721
+|   |   |   |   |   |   + data size 29 offset 637714729
+ISO Media (isom) version 512.
+found 1 tracks
+elst box found
+   - [0] duration=39432174ms media time=0ms) rate=1.0
+track[Id 0x1] read 602 chunk
+STTS table of 1 entries
+track[Id 0x1] read 1698202 samples length:39432s
+selecting program id=0
+adding track[Id 0x1] audio (enable) language undef
+using demux module "mp4"
+looking for a subtitle file in /home/sam/Code/Projects/vlc/git_repo/
+looking for audio decoder module matching "any": 21 candidates
+using audio decoder module "faad"
+looking for meta reader module matching "any": 2 candidates
+using meta reader module "taglib"
+removing module "taglib"
+`file:///home/sam/Code/Projects/vlc/git_repo/1984.m4a' successfully opened
+elst (0) gives 0ms (movie)-> 0ms (track)
+Buffering 0%
+Buffering 25%
+decoded zero sample
+seeking with 0ms preroll (use input-fast-seek to avoid)
+elst (0) gives 0ms (movie)-> 0ms (track)
+Buffering 0%
+reusing audio output
+Buffering 25%
+Buffering 50%
+Buffering 75%
+Buffering 100%
+Stream buffering done (1250 ms in 0 ms)
+using ALSA device: default
+ Plug PCM: Soft volume PCM
+Control: PCM Playback Volume
+min_dB: -51
+max_dB: 0
+resolution: 256
+Slave: Direct Stream Mixing PCM
+Hardware PCM card 0 'HDA Intel' device 0 subdevice 0
+Its setup is:
+  stream       : PLAYBACK
+  access       : MMAP_INTERLEAVED
+  format       : S32_LE
+  subformat    : STD
+  channels     : 2
+  rate         : 48000
+  exact rate   : 48000 (48000/1)
+  msbits       : 32
+  buffer_size  : 16384
+  period_size  : 1024
+  period_time  : 21333
+  tstamp_mode  : ENABLE
+  tstamp_type  : MONOTONIC
+  period_step  : 1
+  avail_min    : 1024
+  period_event : 0
+  start_threshold  : 1
+  stop_threshold   : 0
+  silence_threshold: 0
+  silence_size : 0
+  boundary     : 4611686018427387904
+  appl_ptr     : 0
+  hw_ptr       : 21867392
+ device name   : CX20561 Analog
+ device ID     : CX20561 Analog
+ subdevice name: subdevice #0
+initial hardware setup:
+ACCESS:  MMAP_INTERLEAVED MMAP_NONINTERLEAVED MMAP_COMPLEX RW_INTERLEAVED RW_NONINTERLEAVED
+FORMAT:  S8 U8 S16_LE S16_BE U16_LE U16_BE S24_LE S24_BE U24_LE U24_BE S32_LE S32_BE U32_LE U32_BE FLOAT_LE FLOAT_BE FLOAT64_LE FLOAT64_BE MU_LAW A_LAW IMA_ADPCM S20_LE S20_BE U20_LE U20_BE S24_3LE S24_3BE U24_3LE U24_3BE S20_3LE S20_3BE U20_3LE U20_3BE S18_3LE S18_3BE U18_3LE U18_3BE
+SUBFORMAT:  STD
+SAMPLE_BITS: [4 64]
+FRAME_BITS: [4 640000]
+CHANNELS: [1 10000]
+RATE: 48000
+PERIOD_TIME: (21333 21334)
+PERIOD_SIZE: 1024
+PERIOD_BYTES: [512 81920000]
+PERIODS: [2 16]
+BUFFER_TIME: (42666 341334)
+BUFFER_SIZE: [2048 16384]
+BUFFER_BYTES: [1024 1310720000]
+TICK_TIME: ALL
+using channels map 0, type 1, 2 channel(s)
+final HW setup:
+ACCESS:  RW_INTERLEAVED
+FORMAT:  FLOAT_LE
+SUBFORMAT:  STD
+SAMPLE_BITS: 32
+FRAME_BITS: 64
+CHANNELS: 2
+RATE: 48000
+PERIOD_TIME: (21333 21334)
+PERIOD_SIZE: 1024
+PERIOD_BYTES: 8192
+PERIODS: 16
+BUFFER_TIME: (341333 341334)
+BUFFER_SIZE: 16384
+BUFFER_BYTES: 131072
+TICK_TIME: 0
+initial software parameters:
+tstamp_mode: NONE
+tstamp_type: MONOTONIC
+period_step: 1
+avail_min: 1024
+start_threshold: 1
+stop_threshold: 16384
+silence_threshold: 0
+silence_size: 0
+boundary: 4611686018427387904
+final software parameters:
+tstamp_mode: NONE
+tstamp_type: MONOTONIC
+period_step: 1
+avail_min: 1024
+start_threshold: 1
+stop_threshold: 16384
+silence_threshold: 0
+silence_size: 0
+boundary: 4611686018427387904
+device cannot be paused
+output 'f32l' 48000 Hz Stereo frame=1 samples/8 bytes
+looking for audio volume module matching "any": 2 candidates
+using audio volume module "float_mixer"
+input 'f32l' 44100 Hz Stereo frame=1 samples/8 bytes
+looking for audio filter module matching "scaletempo": 16 candidates
+format: 44100 rate, 2 nch, 4 bps, fl32
+params: 30 stride, 0.200 overlap, 14 search
+1.000 scale, 1323.000 stride_in, 1323 stride_out, 1059 standing, 264 overlap, 617 search, 2204 queue, fl32 mode
+using audio filter module "scaletempo"
+conversion: 'f32l'->'f32l' 44100 Hz->44100 Hz Stereo->Stereo
+conversion pipeline complete
+conversion: 'f32l'->'f32l' 44100 Hz->44100 Hz Stereo->Stereo
+conversion pipeline complete
+looking for audio resampler module matching "any": 4 candidates
+using audio resampler module "samplerate"
+Decoder wait done in 32 ms
+inserting 1043 zeroes
+seeking with 0ms preroll (use input-fast-seek to avoid)
+elst (0) gives 0ms (movie)-> 0ms (track)
+Buffering 0%
+Buffering 25%
+Buffering 50%
+Buffering 75%
+Buffering 100%
+Stream buffering done (1250 ms in 0 ms)
+Decoder wait done in 16 ms
+toggling resume
+toggling pause
+playback way too early (-360267): playing silence
+inserting 17292 zeroes
+toggling resume
+toggling pause
+playback way too early (-345631): playing silence
+inserting 16590 zeroes
+seeking with 0ms preroll (use input-fast-seek to avoid)
+elst (0) gives 140732256388985ms (movie)-> 140732256388984ms (track)
+Buffering 0%
+clock gap, unexpected stream discontinuity
+feeding synchro with a new reference point trying to recover from clock gap
+EOF reached
+Stream buffering done (0 ms in 0 ms)
+buffer deadlock prevented
+Decoder wait done in 175 ms
+killing decoder fourcc `mp4a'
+removing module "faad"
+removing module "samplerate"
+removing module "scaletempo"
+removing module "float_mixer"
+keeping audio output
+removing module "mp4"
+freeing all memory
+Program doesn't contain anymore ES
+removing module "record"
+removing module "cache_read"
+removing module "filesystem"
+removing module "alsa"
+exiting
+no exit handler
+removing all interfaces
+removing module "memory"
+VLC media player - 3.0.11 Vetinari
+Copyright © 1996-2020 the VideoLAN team
+revision 3.0.11-0-gdc0c5ced72
+configured with ./configure  '--build=x86_64-linux-gnu' '--prefix=/usr' '--includedir=${prefix}/include' '--mandir=${prefix}/share/man' '--infodir=${prefix}/share/info' '--sysconfdir=/etc' '--localstatedir=/var' '--disable-silent-rules' '--libdir=${prefix}/lib/x86_64-linux-gnu' '--runstatedir=/run' '--disable-maintainer-mode' '--disable-dependency-tracking' '--disable-debug' '--config-cache' '--disable-update-check' '--enable-fast-install' '--docdir=/usr/share/doc/vlc' '--with-binary-version=3.0.11-0+deb10u1' '--enable-a52' '--enable-aa' '--enable-aom' '--enable-aribsub' '--enable-avahi' '--enable-bluray' '--enable-caca' '--enable-chromaprint' '--enable-chromecast' '--enable-dbus' '--enable-dca' '--enable-dvbpsi' '--enable-dvdnav' '--enable-faad' '--enable-flac' '--enable-fluidsynth' '--enable-freetype' '--enable-fribidi' '--enable-gles2' '--enable-gnutls' '--enable-harfbuzz' '--enable-jack' '--enable-kate' '--enable-libass' '--enable-libmpeg2' '--enable-libxml2' '--enable-lirc' '--enable-live555' '--enable-mad' '--enable-matroska' '--enable-mod' '--enable-mpc' '--enable-mpg123' '--enable-mtp' '--enable-ncurses' '--enable-notify' '--enable-ogg' '--enable-opus' '--enable-pulse' '--enable-qt' '--enable-realrtsp' '--enable-samplerate' '--enable-sdl-image' '--enable-sftp' '--enable-shine' '--enable-shout' '--enable-skins2' '--enable-sndio' '--enable-soxr' '--enable-spatialaudio' '--enable-speex' '--enable-svg' '--enable-svgdec' '--enable-taglib' '--enable-theora' '--enable-twolame' '--enable-upnp' '--enable-vdpau' '--enable-vnc' '--enable-vorbis' '--enable-x264' '--enable-x265' '--enable-zvbi' '--with-kde-solid=/usr/share/solid/actions/' '--disable-d3d11va' '--disable-decklink' '--disable-directx' '--disable-dsm' '--disable-dxva2' '--disable-fdkaac' '--disable-fluidlite' '--disable-freerdp' '--disable-goom' '--disable-gst-decode' '--disable-libtar' '--disable-macosx' '--disable-macosx-avfoundation' '--disable-macosx-qtkit' '--disable-microdns' '--disable-mfx' '--disable-opencv' '--disable-projectm' '--disable-schroedinger' '--disable-sparkle' '--disable-srt' '--disable-telx' '--disable-vpx' '--disable-vsxu' '--disable-wasapi' '--enable-alsa' '--enable-dc1394' '--enable-dv1394' '--enable-libplacebo' '--enable-linsys' '--enable-nfs' '--enable-omxil' '--enable-udev' '--enable-v4l2' '--enable-wayland' '--enable-libva' '--enable-vcd' '--enable-smbclient' '--disable-oss' '--enable-crystalhd' '--enable-mmx' '--enable-sse' '--disable-neon' '--disable-altivec' 'build_alias=x86_64-linux-gnu' 'CFLAGS=-g -O2 -fdebug-prefix-map=/build/vlc-fpAdgn/vlc-3.0.11=. -fstack-protector-strong -Wformat -Werror=format-security ' 'LDFLAGS=-Wl,-z,relro -Wl,-z,now -Wl,--as-needed' 'CPPFLAGS=-Wdate-time -D_FORTIFY_SOURCE=2' 'CXXFLAGS=-g -O2 -fdebug-prefix-map=/build/vlc-fpAdgn/vlc-3.0.11=. -fstack-protector-strong -Wformat -Werror=format-security ' 'OBJCFLAGS=-g -O2 -fdebug-prefix-map=/build/vlc-fpAdgn/vlc-3.0.11=. -fstack-protector-strong -Wformat -Werror=format-security'
+creating audio output
+looking for audio output module matching "any": 6 candidates
+using library version 12.2.0
+ (compiled with version 12.2.0, protocol 32)
+PulseAudio server connection failure: Connection refused
+Available ALSA PCM devices:
+Discard all samples (playback) or generate zero samples (capture) (null)
+JACK Audio Connection Kit (jack)
+PulseAudio Sound Server (pulse)
+HDA Intel, CX20561 Analog Default Audio Device (default:CARD=Intel)
+HDA Intel, CX20561 Analog Default Audio Device (sysdefault:CARD=Intel)
+HDA Intel, CX20561 Analog Front speakers (front:CARD=Intel,DEV=0)
+HDA Intel, CX20561 Analog 2.1 Surround output to Front and Subwoofer speakers (surround21:CARD=Intel,DEV=0)
+HDA Intel, CX20561 Analog 4.0 Surround output to Front and Rear speakers (surround40:CARD=Intel,DEV=0)
+HDA Intel, CX20561 Analog 4.1 Surround output to Front, Rear and Subwoofer speakers (surround41:CARD=Intel,DEV=0)
+HDA Intel, CX20561 Analog 5.0 Surround output to Front, Center and Rear speakers (surround50:CARD=Intel,DEV=0)
+HDA Intel, CX20561 Analog 5.1 Surround output to Front, Center, Rear and Subwoofer speakers (surround51:CARD=Intel,DEV=0)
+HDA Intel, CX20561 Analog 7.1 Surround output to Front, Center, Side, Rear and Woofer speakers (surround71:CARD=Intel,DEV=0)
+HDA Intel, CX20561 Digital IEC958 (S/PDIF) Digital Audio Output (iec958:CARD=Intel,DEV=0)
+HDA Intel, CX20561 Analog Direct sample mixing device (dmix:CARD=Intel,DEV=0)
+HDA Intel, CX20561 Digital Direct sample mixing device (dmix:CARD=Intel,DEV=1)
+HDA Intel, CX20561 Analog Direct sample snooping device (dsnoop:CARD=Intel,DEV=0)
+HDA Intel, CX20561 Digital Direct sample snooping device (dsnoop:CARD=Intel,DEV=1)
+HDA Intel, CX20561 Analog Direct hardware device without any conversions (hw:CARD=Intel,DEV=0)
+HDA Intel, CX20561 Digital Direct hardware device without any conversions (hw:CARD=Intel,DEV=1)
+HDA Intel, CX20561 Analog Hardware device with all software conversions (plughw:CARD=Intel,DEV=0)
+HDA Intel, CX20561 Digital Hardware device with all software conversions (plughw:CARD=Intel,DEV=1)
+HDA Intel USB Stream Output (usbstream:CARD=Intel)
+ThinkPad Console Audio Control USB Stream Output (usbstream:CARD=ThinkPadEC)
+using audio output module "alsa"
+keeping audio output
+Creating an input for 'veruca_salt_number_one_blind.opus'
+using timeshift granularity of 50 MiB
+using default timeshift path
+`file:///home/sam/Code/Projects/vlc/git_repo/audiobook_prototype/veruca_salt_number_one_blind.opus' gives access `file' demux `any' path `/home/sam/Code/Projects/vlc/git_repo/audiobook_prototype/veruca_salt_number_one_blind.opus'
+creating demux: access='file' demux='any' location='/home/sam/Code/Projects/vlc/git_repo/audiobook_prototype/veruca_salt_number_one_blind.opus' file='/home/sam/Code/Projects/vlc/git_repo/audiobook_prototype/veruca_salt_number_one_blind.opus'
+looking for access_demux module matching "file": 17 candidates
+no access_demux modules matched
+creating access: file:///home/sam/Code/Projects/vlc/git_repo/audiobook_prototype/veruca_salt_number_one_blind.opus
+ (path: /home/sam/Code/Projects/vlc/git_repo/audiobook_prototype/veruca_salt_number_one_blind.opus)
+looking for access module matching "file": 28 candidates
+using access module "filesystem"
+looking for stream_filter module matching "prefetch,cache_read": 26 candidates
+Using stream method for AStream*
+starting pre-buffering
+received first data after 0 ms
+pre-buffering done 1024 bytes in 0s - 33333 KiB/s
+using stream_filter module "cache_read"
+looking for stream_filter module matching "any": 26 candidates
+Trying Lua scripts in /home/sam/.local/share/vlc/lua/playlist
+Trying Lua scripts in /usr/lib/x86_64-linux-gnu/vlc/lua/playlist
+Trying Lua playlist script /usr/lib/x86_64-linux-gnu/vlc/lua/playlist/anevia_streams.luac
+Trying Lua playlist script /usr/lib/x86_64-linux-gnu/vlc/lua/playlist/anevia_xml.luac
+Trying Lua playlist script /usr/lib/x86_64-linux-gnu/vlc/lua/playlist/appletrailers.luac
+Trying Lua playlist script /usr/lib/x86_64-linux-gnu/vlc/lua/playlist/bbc_co_uk.luac
+Trying Lua playlist script /usr/lib/x86_64-linux-gnu/vlc/lua/playlist/cue.luac
+Trying Lua playlist script /usr/lib/x86_64-linux-gnu/vlc/lua/playlist/dailymotion.luac
+Trying Lua playlist script /usr/lib/x86_64-linux-gnu/vlc/lua/playlist/jamendo.luac
+Trying Lua playlist script /usr/lib/x86_64-linux-gnu/vlc/lua/playlist/koreus.luac
+Trying Lua playlist script /usr/lib/x86_64-linux-gnu/vlc/lua/playlist/liveleak.luac
+Trying Lua playlist script /usr/lib/x86_64-linux-gnu/vlc/lua/playlist/newgrounds.luac
+Trying Lua playlist script /usr/lib/x86_64-linux-gnu/vlc/lua/playlist/rockbox_fm_presets.luac
+Trying Lua playlist script /usr/lib/x86_64-linux-gnu/vlc/lua/playlist/soundcloud.luac
+Trying Lua playlist script /usr/lib/x86_64-linux-gnu/vlc/lua/playlist/twitch.luac
+Trying Lua playlist script /usr/lib/x86_64-linux-gnu/vlc/lua/playlist/vimeo.luac
+Trying Lua playlist script /usr/lib/x86_64-linux-gnu/vlc/lua/playlist/vocaroo.luac
+Trying Lua playlist script /usr/lib/x86_64-linux-gnu/vlc/lua/playlist/youtube.luac
+Trying Lua scripts in /usr/share/vlc/lua/playlist
+no stream_filter modules matched
+looking for stream_directory module matching "any": 1 candidates
+no stream_directory modules matched
+attachment of directory-extractor failed for file:///home/sam/Code/Projects/vlc/git_repo/audiobook_prototype/veruca_salt_number_one_blind.opus
+looking for stream_filter module matching "record": 26 candidates
+using stream_filter module "record"
+creating demux: access='file' demux='any' location='/home/sam/Code/Projects/vlc/git_repo/audiobook_prototype/veruca_salt_number_one_blind.opus' file='/home/sam/Code/Projects/vlc/git_repo/audiobook_prototype/veruca_salt_number_one_blind.opus'
+looking for demux module matching "ogg": 55 candidates
+File length is 3541693 bytes
+found opus header, channels: 2, pre-skip: 3840
+beginning of a group of logical streams
+using demux module "ogg"
+looking for a subtitle file in /home/sam/Code/Projects/vlc/git_repo/audiobook_prototype/
+looking for meta reader module matching "any": 2 candidates
+using meta reader module "taglib"
+removing module "taglib"
+`file:///home/sam/Code/Projects/vlc/git_repo/audiobook_prototype/veruca_salt_number_one_blind.opus' successfully opened
+selecting program id=0
+looking for audio decoder module matching "any": 21 candidates
+using audio decoder module "opus"
+Buffering 0%
+Opus audio with 2 channels
+reusing audio output
+Buffering 0%
+Buffering 92%
+Stream buffering done (1920 ms in 0 ms)
+using ALSA device: default
+ Plug PCM: Soft volume PCM
+Control: PCM Playback Volume
+min_dB: -51
+max_dB: 0
+resolution: 256
+Slave: Direct Stream Mixing PCM
+Hardware PCM card 0 'HDA Intel' device 0 subdevice 0
+Its setup is:
+  stream       : PLAYBACK
+  access       : MMAP_INTERLEAVED
+  format       : S32_LE
+  subformat    : STD
+  channels     : 2
+  rate         : 48000
+  exact rate   : 48000 (48000/1)
+  msbits       : 32
+  buffer_size  : 16384
+  period_size  : 1024
+  period_time  : 21333
+  tstamp_mode  : ENABLE
+  tstamp_type  : MONOTONIC
+  period_step  : 1
+  avail_min    : 1024
+  period_event : 0
+  start_threshold  : 1
+  stop_threshold   : 0
+  silence_threshold: 0
+  silence_size : 0
+  boundary     : 4611686018427387904
+  appl_ptr     : 0
+  hw_ptr       : 53986305
+ device name   : CX20561 Analog
+ device ID     : CX20561 Analog
+ subdevice name: subdevice #0
+initial hardware setup:
+ACCESS:  MMAP_INTERLEAVED MMAP_NONINTERLEAVED MMAP_COMPLEX RW_INTERLEAVED RW_NONINTERLEAVED
+FORMAT:  S8 U8 S16_LE S16_BE U16_LE U16_BE S24_LE S24_BE U24_LE U24_BE S32_LE S32_BE U32_LE U32_BE FLOAT_LE FLOAT_BE FLOAT64_LE FLOAT64_BE MU_LAW A_LAW IMA_ADPCM S20_LE S20_BE U20_LE U20_BE S24_3LE S24_3BE U24_3LE U24_3BE S20_3LE S20_3BE U20_3LE U20_3BE S18_3LE S18_3BE U18_3LE U18_3BE
+SUBFORMAT:  STD
+SAMPLE_BITS: [4 64]
+FRAME_BITS: [4 640000]
+CHANNELS: [1 10000]
+RATE: 48000
+PERIOD_TIME: (21333 21334)
+PERIOD_SIZE: 1024
+PERIOD_BYTES: [512 81920000]
+PERIODS: [2 16]
+BUFFER_TIME: (42666 341334)
+BUFFER_SIZE: [2048 16384]
+BUFFER_BYTES: [1024 1310720000]
+TICK_TIME: ALL
+using channels map 0, type 1, 2 channel(s)
+final HW setup:
+ACCESS:  RW_INTERLEAVED
+FORMAT:  FLOAT_LE
+SUBFORMAT:  STD
+SAMPLE_BITS: 32
+FRAME_BITS: 64
+CHANNELS: 2
+RATE: 48000
+PERIOD_TIME: (21333 21334)
+PERIOD_SIZE: 1024
+PERIOD_BYTES: 8192
+PERIODS: 16
+BUFFER_TIME: (341333 341334)
+BUFFER_SIZE: 16384
+BUFFER_BYTES: 131072
+TICK_TIME: 0
+initial software parameters:
+tstamp_mode: NONE
+tstamp_type: MONOTONIC
+period_step: 1
+avail_min: 1024
+start_threshold: 1
+stop_threshold: 16384
+silence_threshold: 0
+silence_size: 0
+boundary: 4611686018427387904
+final software parameters:
+tstamp_mode: NONE
+tstamp_type: MONOTONIC
+period_step: 1
+avail_min: 1024
+start_threshold: 1
+stop_threshold: 16384
+silence_threshold: 0
+silence_size: 0
+boundary: 4611686018427387904
+device cannot be paused
+output 'f32l' 48000 Hz Stereo frame=1 samples/8 bytes
+looking for audio volume module matching "any": 2 candidates
+using audio volume module "float_mixer"
+input 'f32l' 48000 Hz Stereo frame=1 samples/8 bytes
+looking for audio filter module matching "scaletempo": 16 candidates
+format: 48000 rate, 2 nch, 4 bps, fl32
+params: 30 stride, 0.200 overlap, 14 search
+1.000 scale, 1440.000 stride_in, 1440 stride_out, 1152 standing, 288 overlap, 672 search, 2400 queue, fl32 mode
+using audio filter module "scaletempo"
+conversion: 'f32l'->'f32l' 48000 Hz->48000 Hz Stereo->Stereo
+conversion pipeline complete
+conversion: 'f32l'->'f32l' 48000 Hz->48000 Hz Stereo->Stereo
+conversion pipeline complete
+looking for audio resampler module matching "any": 4 candidates
+using audio resampler module "samplerate"
+Decoder wait done in 21 ms
+inserting 373 zeroes
+Buffering 0%
+Buffering 92%
+Stream buffering done (1920 ms in 1 ms)
+Decoder wait done in 0 ms
+Buffering 0%
+Buffering 34%
+Buffering 68%
+Stream buffering done (3000 ms in 1 ms)
+end of audio preroll
+Decoder wait done in 11 ms
+Buffering 0%
+Buffering 34%
+Buffering 68%
+Stream buffering done (3000 ms in 12 ms)
+end of audio preroll
+Decoder wait done in 7 ms
+Buffering 0%
+Buffering 34%
+Buffering 68%
+Stream buffering done (3000 ms in 1 ms)
+end of audio preroll
+Decoder wait done in 30 ms
+Buffering 0%
+Buffering 34%
+Buffering 68%
+Stream buffering done (3000 ms in 1 ms)
+end of audio preroll
+Decoder wait done in 30 ms
+Buffering 0%
+Buffering 34%
+Buffering 68%
+Stream buffering done (3000 ms in 2 ms)
+end of audio preroll
+Decoder wait done in 11 ms
+Buffering 0%
+Buffering 34%
+Buffering 68%
+Stream buffering done (3000 ms in 2 ms)
+end of audio preroll
+Decoder wait done in 25 ms
+toggling resume
+toggling pause
+playback way too early (-367916): playing silence
+inserting 17659 zeroes
+killing decoder fourcc `Opus'
+removing module "opus"
+removing module "samplerate"
+removing module "scaletempo"
+removing module "float_mixer"
+keeping audio output
+removing module "ogg"
+Program doesn't contain anymore ES
+removing module "record"
+removing module "cache_read"
+removing module "filesystem"
+removing module "alsa"
+exiting
+no exit handler
+removing all interfaces
+removing module "memory"
+VLC media player - 3.0.11 Vetinari
+Copyright © 1996-2020 the VideoLAN team
+revision 3.0.11-0-gdc0c5ced72
+configured with ./configure  '--build=x86_64-linux-gnu' '--prefix=/usr' '--includedir=${prefix}/include' '--mandir=${prefix}/share/man' '--infodir=${prefix}/share/info' '--sysconfdir=/etc' '--localstatedir=/var' '--disable-silent-rules' '--libdir=${prefix}/lib/x86_64-linux-gnu' '--runstatedir=/run' '--disable-maintainer-mode' '--disable-dependency-tracking' '--disable-debug' '--config-cache' '--disable-update-check' '--enable-fast-install' '--docdir=/usr/share/doc/vlc' '--with-binary-version=3.0.11-0+deb10u1' '--enable-a52' '--enable-aa' '--enable-aom' '--enable-aribsub' '--enable-avahi' '--enable-bluray' '--enable-caca' '--enable-chromaprint' '--enable-chromecast' '--enable-dbus' '--enable-dca' '--enable-dvbpsi' '--enable-dvdnav' '--enable-faad' '--enable-flac' '--enable-fluidsynth' '--enable-freetype' '--enable-fribidi' '--enable-gles2' '--enable-gnutls' '--enable-harfbuzz' '--enable-jack' '--enable-kate' '--enable-libass' '--enable-libmpeg2' '--enable-libxml2' '--enable-lirc' '--enable-live555' '--enable-mad' '--enable-matroska' '--enable-mod' '--enable-mpc' '--enable-mpg123' '--enable-mtp' '--enable-ncurses' '--enable-notify' '--enable-ogg' '--enable-opus' '--enable-pulse' '--enable-qt' '--enable-realrtsp' '--enable-samplerate' '--enable-sdl-image' '--enable-sftp' '--enable-shine' '--enable-shout' '--enable-skins2' '--enable-sndio' '--enable-soxr' '--enable-spatialaudio' '--enable-speex' '--enable-svg' '--enable-svgdec' '--enable-taglib' '--enable-theora' '--enable-twolame' '--enable-upnp' '--enable-vdpau' '--enable-vnc' '--enable-vorbis' '--enable-x264' '--enable-x265' '--enable-zvbi' '--with-kde-solid=/usr/share/solid/actions/' '--disable-d3d11va' '--disable-decklink' '--disable-directx' '--disable-dsm' '--disable-dxva2' '--disable-fdkaac' '--disable-fluidlite' '--disable-freerdp' '--disable-goom' '--disable-gst-decode' '--disable-libtar' '--disable-macosx' '--disable-macosx-avfoundation' '--disable-macosx-qtkit' '--disable-microdns' '--disable-mfx' '--disable-opencv' '--disable-projectm' '--disable-schroedinger' '--disable-sparkle' '--disable-srt' '--disable-telx' '--disable-vpx' '--disable-vsxu' '--disable-wasapi' '--enable-alsa' '--enable-dc1394' '--enable-dv1394' '--enable-libplacebo' '--enable-linsys' '--enable-nfs' '--enable-omxil' '--enable-udev' '--enable-v4l2' '--enable-wayland' '--enable-libva' '--enable-vcd' '--enable-smbclient' '--disable-oss' '--enable-crystalhd' '--enable-mmx' '--enable-sse' '--disable-neon' '--disable-altivec' 'build_alias=x86_64-linux-gnu' 'CFLAGS=-g -O2 -fdebug-prefix-map=/build/vlc-fpAdgn/vlc-3.0.11=. -fstack-protector-strong -Wformat -Werror=format-security ' 'LDFLAGS=-Wl,-z,relro -Wl,-z,now -Wl,--as-needed' 'CPPFLAGS=-Wdate-time -D_FORTIFY_SOURCE=2' 'CXXFLAGS=-g -O2 -fdebug-prefix-map=/build/vlc-fpAdgn/vlc-3.0.11=. -fstack-protector-strong -Wformat -Werror=format-security ' 'OBJCFLAGS=-g -O2 -fdebug-prefix-map=/build/vlc-fpAdgn/vlc-3.0.11=. -fstack-protector-strong -Wformat -Werror=format-security'
+creating audio output
+looking for audio output module matching "any": 6 candidates
+using library version 12.2.0
+ (compiled with version 12.2.0, protocol 32)
+PulseAudio server connection failure: Connection refused
+Available ALSA PCM devices:
+Discard all samples (playback) or generate zero samples (capture) (null)
+JACK Audio Connection Kit (jack)
+PulseAudio Sound Server (pulse)
+HDA Intel, CX20561 Analog Default Audio Device (default:CARD=Intel)
+HDA Intel, CX20561 Analog Default Audio Device (sysdefault:CARD=Intel)
+HDA Intel, CX20561 Analog Front speakers (front:CARD=Intel,DEV=0)
+HDA Intel, CX20561 Analog 2.1 Surround output to Front and Subwoofer speakers (surround21:CARD=Intel,DEV=0)
+HDA Intel, CX20561 Analog 4.0 Surround output to Front and Rear speakers (surround40:CARD=Intel,DEV=0)
+HDA Intel, CX20561 Analog 4.1 Surround output to Front, Rear and Subwoofer speakers (surround41:CARD=Intel,DEV=0)
+HDA Intel, CX20561 Analog 5.0 Surround output to Front, Center and Rear speakers (surround50:CARD=Intel,DEV=0)
+HDA Intel, CX20561 Analog 5.1 Surround output to Front, Center, Rear and Subwoofer speakers (surround51:CARD=Intel,DEV=0)
+HDA Intel, CX20561 Analog 7.1 Surround output to Front, Center, Side, Rear and Woofer speakers (surround71:CARD=Intel,DEV=0)
+HDA Intel, CX20561 Digital IEC958 (S/PDIF) Digital Audio Output (iec958:CARD=Intel,DEV=0)
+HDA Intel, CX20561 Analog Direct sample mixing device (dmix:CARD=Intel,DEV=0)
+HDA Intel, CX20561 Digital Direct sample mixing device (dmix:CARD=Intel,DEV=1)
+HDA Intel, CX20561 Analog Direct sample snooping device (dsnoop:CARD=Intel,DEV=0)
+HDA Intel, CX20561 Digital Direct sample snooping device (dsnoop:CARD=Intel,DEV=1)
+HDA Intel, CX20561 Analog Direct hardware device without any conversions (hw:CARD=Intel,DEV=0)
+HDA Intel, CX20561 Digital Direct hardware device without any conversions (hw:CARD=Intel,DEV=1)
+HDA Intel, CX20561 Analog Hardware device with all software conversions (plughw:CARD=Intel,DEV=0)
+HDA Intel, CX20561 Digital Hardware device with all software conversions (plughw:CARD=Intel,DEV=1)
+HDA Intel USB Stream Output (usbstream:CARD=Intel)
+ThinkPad Console Audio Control USB Stream Output (usbstream:CARD=ThinkPadEC)
+using audio output module "alsa"
+keeping audio output
+removing module "alsa"
+exiting
+no exit handler
+removing all interfaces
+removing module "memory"
+VLC media player - 3.0.11 Vetinari
+Copyright © 1996-2020 the VideoLAN team
+revision 3.0.11-0-gdc0c5ced72
+configured with ./configure  '--build=x86_64-linux-gnu' '--prefix=/usr' '--includedir=${prefix}/include' '--mandir=${prefix}/share/man' '--infodir=${prefix}/share/info' '--sysconfdir=/etc' '--localstatedir=/var' '--disable-silent-rules' '--libdir=${prefix}/lib/x86_64-linux-gnu' '--runstatedir=/run' '--disable-maintainer-mode' '--disable-dependency-tracking' '--disable-debug' '--config-cache' '--disable-update-check' '--enable-fast-install' '--docdir=/usr/share/doc/vlc' '--with-binary-version=3.0.11-0+deb10u1' '--enable-a52' '--enable-aa' '--enable-aom' '--enable-aribsub' '--enable-avahi' '--enable-bluray' '--enable-caca' '--enable-chromaprint' '--enable-chromecast' '--enable-dbus' '--enable-dca' '--enable-dvbpsi' '--enable-dvdnav' '--enable-faad' '--enable-flac' '--enable-fluidsynth' '--enable-freetype' '--enable-fribidi' '--enable-gles2' '--enable-gnutls' '--enable-harfbuzz' '--enable-jack' '--enable-kate' '--enable-libass' '--enable-libmpeg2' '--enable-libxml2' '--enable-lirc' '--enable-live555' '--enable-mad' '--enable-matroska' '--enable-mod' '--enable-mpc' '--enable-mpg123' '--enable-mtp' '--enable-ncurses' '--enable-notify' '--enable-ogg' '--enable-opus' '--enable-pulse' '--enable-qt' '--enable-realrtsp' '--enable-samplerate' '--enable-sdl-image' '--enable-sftp' '--enable-shine' '--enable-shout' '--enable-skins2' '--enable-sndio' '--enable-soxr' '--enable-spatialaudio' '--enable-speex' '--enable-svg' '--enable-svgdec' '--enable-taglib' '--enable-theora' '--enable-twolame' '--enable-upnp' '--enable-vdpau' '--enable-vnc' '--enable-vorbis' '--enable-x264' '--enable-x265' '--enable-zvbi' '--with-kde-solid=/usr/share/solid/actions/' '--disable-d3d11va' '--disable-decklink' '--disable-directx' '--disable-dsm' '--disable-dxva2' '--disable-fdkaac' '--disable-fluidlite' '--disable-freerdp' '--disable-goom' '--disable-gst-decode' '--disable-libtar' '--disable-macosx' '--disable-macosx-avfoundation' '--disable-macosx-qtkit' '--disable-microdns' '--disable-mfx' '--disable-opencv' '--disable-projectm' '--disable-schroedinger' '--disable-sparkle' '--disable-srt' '--disable-telx' '--disable-vpx' '--disable-vsxu' '--disable-wasapi' '--enable-alsa' '--enable-dc1394' '--enable-dv1394' '--enable-libplacebo' '--enable-linsys' '--enable-nfs' '--enable-omxil' '--enable-udev' '--enable-v4l2' '--enable-wayland' '--enable-libva' '--enable-vcd' '--enable-smbclient' '--disable-oss' '--enable-crystalhd' '--enable-mmx' '--enable-sse' '--disable-neon' '--disable-altivec' 'build_alias=x86_64-linux-gnu' 'CFLAGS=-g -O2 -fdebug-prefix-map=/build/vlc-fpAdgn/vlc-3.0.11=. -fstack-protector-strong -Wformat -Werror=format-security ' 'LDFLAGS=-Wl,-z,relro -Wl,-z,now -Wl,--as-needed' 'CPPFLAGS=-Wdate-time -D_FORTIFY_SOURCE=2' 'CXXFLAGS=-g -O2 -fdebug-prefix-map=/build/vlc-fpAdgn/vlc-3.0.11=. -fstack-protector-strong -Wformat -Werror=format-security ' 'OBJCFLAGS=-g -O2 -fdebug-prefix-map=/build/vlc-fpAdgn/vlc-3.0.11=. -fstack-protector-strong -Wformat -Werror=format-security'
+creating audio output
+looking for audio output module matching "any": 6 candidates
+using library version 12.2.0
+ (compiled with version 12.2.0, protocol 32)
+PulseAudio server connection failure: Connection refused
+Available ALSA PCM devices:
+Discard all samples (playback) or generate zero samples (capture) (null)
+JACK Audio Connection Kit (jack)
+PulseAudio Sound Server (pulse)
+HDA Intel, CX20561 Analog Default Audio Device (default:CARD=Intel)
+HDA Intel, CX20561 Analog Default Audio Device (sysdefault:CARD=Intel)
+HDA Intel, CX20561 Analog Front speakers (front:CARD=Intel,DEV=0)
+HDA Intel, CX20561 Analog 2.1 Surround output to Front and Subwoofer speakers (surround21:CARD=Intel,DEV=0)
+HDA Intel, CX20561 Analog 4.0 Surround output to Front and Rear speakers (surround40:CARD=Intel,DEV=0)
+HDA Intel, CX20561 Analog 4.1 Surround output to Front, Rear and Subwoofer speakers (surround41:CARD=Intel,DEV=0)
+HDA Intel, CX20561 Analog 5.0 Surround output to Front, Center and Rear speakers (surround50:CARD=Intel,DEV=0)
+HDA Intel, CX20561 Analog 5.1 Surround output to Front, Center, Rear and Subwoofer speakers (surround51:CARD=Intel,DEV=0)
+HDA Intel, CX20561 Analog 7.1 Surround output to Front, Center, Side, Rear and Woofer speakers (surround71:CARD=Intel,DEV=0)
+HDA Intel, CX20561 Digital IEC958 (S/PDIF) Digital Audio Output (iec958:CARD=Intel,DEV=0)
+HDA Intel, CX20561 Analog Direct sample mixing device (dmix:CARD=Intel,DEV=0)
+HDA Intel, CX20561 Digital Direct sample mixing device (dmix:CARD=Intel,DEV=1)
+HDA Intel, CX20561 Analog Direct sample snooping device (dsnoop:CARD=Intel,DEV=0)
+HDA Intel, CX20561 Digital Direct sample snooping device (dsnoop:CARD=Intel,DEV=1)
+HDA Intel, CX20561 Analog Direct hardware device without any conversions (hw:CARD=Intel,DEV=0)
+HDA Intel, CX20561 Digital Direct hardware device without any conversions (hw:CARD=Intel,DEV=1)
+HDA Intel, CX20561 Analog Hardware device with all software conversions (plughw:CARD=Intel,DEV=0)
+HDA Intel, CX20561 Digital Hardware device with all software conversions (plughw:CARD=Intel,DEV=1)
+HDA Intel USB Stream Output (usbstream:CARD=Intel)
+ThinkPad Console Audio Control USB Stream Output (usbstream:CARD=ThinkPadEC)
+using audio output module "alsa"
+keeping audio output
+Creating an input for 'veruca_salt_number_one_blind.opus'
+using timeshift granularity of 50 MiB
+using default timeshift path
+`file:///home/sam/Code/Projects/vlc/git_repo/audiobook_prototype/veruca_salt_number_one_blind.opus' gives access `file' demux `any' path `/home/sam/Code/Projects/vlc/git_repo/audiobook_prototype/veruca_salt_number_one_blind.opus'
+creating demux: access='file' demux='any' location='/home/sam/Code/Projects/vlc/git_repo/audiobook_prototype/veruca_salt_number_one_blind.opus' file='/home/sam/Code/Projects/vlc/git_repo/audiobook_prototype/veruca_salt_number_one_blind.opus'
+looking for access_demux module matching "file": 17 candidates
+no access_demux modules matched
+creating access: file:///home/sam/Code/Projects/vlc/git_repo/audiobook_prototype/veruca_salt_number_one_blind.opus
+ (path: /home/sam/Code/Projects/vlc/git_repo/audiobook_prototype/veruca_salt_number_one_blind.opus)
+looking for access module matching "file": 28 candidates
+using access module "filesystem"
+looking for stream_filter module matching "prefetch,cache_read": 26 candidates
+Using stream method for AStream*
+starting pre-buffering
+received first data after 0 ms
+pre-buffering done 1024 bytes in 0s - 34482 KiB/s
+using stream_filter module "cache_read"
+looking for stream_filter module matching "any": 26 candidates
+Trying Lua scripts in /home/sam/.local/share/vlc/lua/playlist
+Trying Lua scripts in /usr/lib/x86_64-linux-gnu/vlc/lua/playlist
+Trying Lua playlist script /usr/lib/x86_64-linux-gnu/vlc/lua/playlist/anevia_streams.luac
+Trying Lua playlist script /usr/lib/x86_64-linux-gnu/vlc/lua/playlist/anevia_xml.luac
+Trying Lua playlist script /usr/lib/x86_64-linux-gnu/vlc/lua/playlist/appletrailers.luac
+Trying Lua playlist script /usr/lib/x86_64-linux-gnu/vlc/lua/playlist/bbc_co_uk.luac
+Trying Lua playlist script /usr/lib/x86_64-linux-gnu/vlc/lua/playlist/cue.luac
+Trying Lua playlist script /usr/lib/x86_64-linux-gnu/vlc/lua/playlist/dailymotion.luac
+Trying Lua playlist script /usr/lib/x86_64-linux-gnu/vlc/lua/playlist/jamendo.luac
+Trying Lua playlist script /usr/lib/x86_64-linux-gnu/vlc/lua/playlist/koreus.luac
+Trying Lua playlist script /usr/lib/x86_64-linux-gnu/vlc/lua/playlist/liveleak.luac
+Trying Lua playlist script /usr/lib/x86_64-linux-gnu/vlc/lua/playlist/newgrounds.luac
+Trying Lua playlist script /usr/lib/x86_64-linux-gnu/vlc/lua/playlist/rockbox_fm_presets.luac
+Trying Lua playlist script /usr/lib/x86_64-linux-gnu/vlc/lua/playlist/soundcloud.luac
+Trying Lua playlist script /usr/lib/x86_64-linux-gnu/vlc/lua/playlist/twitch.luac
+Trying Lua playlist script /usr/lib/x86_64-linux-gnu/vlc/lua/playlist/vimeo.luac
+Trying Lua playlist script /usr/lib/x86_64-linux-gnu/vlc/lua/playlist/vocaroo.luac
+Trying Lua playlist script /usr/lib/x86_64-linux-gnu/vlc/lua/playlist/youtube.luac
+Trying Lua scripts in /usr/share/vlc/lua/playlist
+no stream_filter modules matched
+looking for stream_directory module matching "any": 1 candidates
+no stream_directory modules matched
+attachment of directory-extractor failed for file:///home/sam/Code/Projects/vlc/git_repo/audiobook_prototype/veruca_salt_number_one_blind.opus
+looking for stream_filter module matching "record": 26 candidates
+using stream_filter module "record"
+creating demux: access='file' demux='any' location='/home/sam/Code/Projects/vlc/git_repo/audiobook_prototype/veruca_salt_number_one_blind.opus' file='/home/sam/Code/Projects/vlc/git_repo/audiobook_prototype/veruca_salt_number_one_blind.opus'
+looking for demux module matching "ogg": 55 candidates
+File length is 3541693 bytes
+found opus header, channels: 2, pre-skip: 3840
+beginning of a group of logical streams
+using demux module "ogg"
+looking for a subtitle file in /home/sam/Code/Projects/vlc/git_repo/audiobook_prototype/
+looking for meta reader module matching "any": 2 candidates
+using meta reader module "taglib"
+removing module "taglib"
+`file:///home/sam/Code/Projects/vlc/git_repo/audiobook_prototype/veruca_salt_number_one_blind.opus' successfully opened
+selecting program id=0
+looking for audio decoder module matching "any": 21 candidates
+using audio decoder module "opus"
+Buffering 0%
+Opus audio with 2 channels
+reusing audio output
+Buffering 0%
+Buffering 92%
+Stream buffering done (1920 ms in 0 ms)
+using ALSA device: default
+ Plug PCM: Soft volume PCM
+Control: PCM Playback Volume
+min_dB: -51
+max_dB: 0
+resolution: 256
+Slave: Direct Stream Mixing PCM
+Hardware PCM card 0 'HDA Intel' device 0 subdevice 0
+Its setup is:
+  stream       : PLAYBACK
+  access       : MMAP_INTERLEAVED
+  format       : S32_LE
+  subformat    : STD
+  channels     : 2
+  rate         : 48000
+  exact rate   : 48000 (48000/1)
+  msbits       : 32
+  buffer_size  : 16384
+  period_size  : 1024
+  period_time  : 21333
+  tstamp_mode  : ENABLE
+  tstamp_type  : MONOTONIC
+  period_step  : 1
+  avail_min    : 1024
+  period_event : 0
+  start_threshold  : 1
+  stop_threshold   : 0
+  silence_threshold: 0
+  silence_size : 0
+  boundary     : 4611686018427387904
+  appl_ptr     : 0
+  hw_ptr       : 58039305
+ device name   : CX20561 Analog
+ device ID     : CX20561 Analog
+ subdevice name: subdevice #0
+initial hardware setup:
+ACCESS:  MMAP_INTERLEAVED MMAP_NONINTERLEAVED MMAP_COMPLEX RW_INTERLEAVED RW_NONINTERLEAVED
+FORMAT:  S8 U8 S16_LE S16_BE U16_LE U16_BE S24_LE S24_BE U24_LE U24_BE S32_LE S32_BE U32_LE U32_BE FLOAT_LE FLOAT_BE FLOAT64_LE FLOAT64_BE MU_LAW A_LAW IMA_ADPCM S20_LE S20_BE U20_LE U20_BE S24_3LE S24_3BE U24_3LE U24_3BE S20_3LE S20_3BE U20_3LE U20_3BE S18_3LE S18_3BE U18_3LE U18_3BE
+SUBFORMAT:  STD
+SAMPLE_BITS: [4 64]
+FRAME_BITS: [4 640000]
+CHANNELS: [1 10000]
+RATE: 48000
+PERIOD_TIME: (21333 21334)
+PERIOD_SIZE: 1024
+PERIOD_BYTES: [512 81920000]
+PERIODS: [2 16]
+BUFFER_TIME: (42666 341334)
+BUFFER_SIZE: [2048 16384]
+BUFFER_BYTES: [1024 1310720000]
+TICK_TIME: ALL
+using channels map 0, type 1, 2 channel(s)
+final HW setup:
+ACCESS:  RW_INTERLEAVED
+FORMAT:  FLOAT_LE
+SUBFORMAT:  STD
+SAMPLE_BITS: 32
+FRAME_BITS: 64
+CHANNELS: 2
+RATE: 48000
+PERIOD_TIME: (21333 21334)
+PERIOD_SIZE: 1024
+PERIOD_BYTES: 8192
+PERIODS: 16
+BUFFER_TIME: (341333 341334)
+BUFFER_SIZE: 16384
+BUFFER_BYTES: 131072
+TICK_TIME: 0
+initial software parameters:
+tstamp_mode: NONE
+tstamp_type: MONOTONIC
+period_step: 1
+avail_min: 1024
+start_threshold: 1
+stop_threshold: 16384
+silence_threshold: 0
+silence_size: 0
+boundary: 4611686018427387904
+final software parameters:
+tstamp_mode: NONE
+tstamp_type: MONOTONIC
+period_step: 1
+avail_min: 1024
+start_threshold: 1
+stop_threshold: 16384
+silence_threshold: 0
+silence_size: 0
+boundary: 4611686018427387904
+device cannot be paused
+output 'f32l' 48000 Hz Stereo frame=1 samples/8 bytes
+looking for audio volume module matching "any": 2 candidates
+using audio volume module "float_mixer"
+input 'f32l' 48000 Hz Stereo frame=1 samples/8 bytes
+looking for audio filter module matching "scaletempo": 16 candidates
+format: 48000 rate, 2 nch, 4 bps, fl32
+params: 30 stride, 0.200 overlap, 14 search
+1.000 scale, 1440.000 stride_in, 1440 stride_out, 1152 standing, 288 overlap, 672 search, 2400 queue, fl32 mode
+using audio filter module "scaletempo"
+conversion: 'f32l'->'f32l' 48000 Hz->48000 Hz Stereo->Stereo
+conversion pipeline complete
+conversion: 'f32l'->'f32l' 48000 Hz->48000 Hz Stereo->Stereo
+conversion pipeline complete
+looking for audio resampler module matching "any": 4 candidates
+using audio resampler module "samplerate"
+Decoder wait done in 23 ms
+inserting 430 zeroes
+killing decoder fourcc `Opus'
+removing module "opus"
+removing module "samplerate"
+removing module "scaletempo"
+removing module "float_mixer"
+keeping audio output
+removing module "ogg"
+Program doesn't contain anymore ES
+removing module "record"
+removing module "cache_read"
+removing module "filesystem"
+removing module "alsa"
+exiting
+no exit handler
+removing all interfaces
+removing module "memory"
+VLC media player - 3.0.11 Vetinari
+Copyright © 1996-2020 the VideoLAN team
+revision 3.0.11-0-gdc0c5ced72
+configured with ./configure  '--build=x86_64-linux-gnu' '--prefix=/usr' '--includedir=${prefix}/include' '--mandir=${prefix}/share/man' '--infodir=${prefix}/share/info' '--sysconfdir=/etc' '--localstatedir=/var' '--disable-silent-rules' '--libdir=${prefix}/lib/x86_64-linux-gnu' '--runstatedir=/run' '--disable-maintainer-mode' '--disable-dependency-tracking' '--disable-debug' '--config-cache' '--disable-update-check' '--enable-fast-install' '--docdir=/usr/share/doc/vlc' '--with-binary-version=3.0.11-0+deb10u1' '--enable-a52' '--enable-aa' '--enable-aom' '--enable-aribsub' '--enable-avahi' '--enable-bluray' '--enable-caca' '--enable-chromaprint' '--enable-chromecast' '--enable-dbus' '--enable-dca' '--enable-dvbpsi' '--enable-dvdnav' '--enable-faad' '--enable-flac' '--enable-fluidsynth' '--enable-freetype' '--enable-fribidi' '--enable-gles2' '--enable-gnutls' '--enable-harfbuzz' '--enable-jack' '--enable-kate' '--enable-libass' '--enable-libmpeg2' '--enable-libxml2' '--enable-lirc' '--enable-live555' '--enable-mad' '--enable-matroska' '--enable-mod' '--enable-mpc' '--enable-mpg123' '--enable-mtp' '--enable-ncurses' '--enable-notify' '--enable-ogg' '--enable-opus' '--enable-pulse' '--enable-qt' '--enable-realrtsp' '--enable-samplerate' '--enable-sdl-image' '--enable-sftp' '--enable-shine' '--enable-shout' '--enable-skins2' '--enable-sndio' '--enable-soxr' '--enable-spatialaudio' '--enable-speex' '--enable-svg' '--enable-svgdec' '--enable-taglib' '--enable-theora' '--enable-twolame' '--enable-upnp' '--enable-vdpau' '--enable-vnc' '--enable-vorbis' '--enable-x264' '--enable-x265' '--enable-zvbi' '--with-kde-solid=/usr/share/solid/actions/' '--disable-d3d11va' '--disable-decklink' '--disable-directx' '--disable-dsm' '--disable-dxva2' '--disable-fdkaac' '--disable-fluidlite' '--disable-freerdp' '--disable-goom' '--disable-gst-decode' '--disable-libtar' '--disable-macosx' '--disable-macosx-avfoundation' '--disable-macosx-qtkit' '--disable-microdns' '--disable-mfx' '--disable-opencv' '--disable-projectm' '--disable-schroedinger' '--disable-sparkle' '--disable-srt' '--disable-telx' '--disable-vpx' '--disable-vsxu' '--disable-wasapi' '--enable-alsa' '--enable-dc1394' '--enable-dv1394' '--enable-libplacebo' '--enable-linsys' '--enable-nfs' '--enable-omxil' '--enable-udev' '--enable-v4l2' '--enable-wayland' '--enable-libva' '--enable-vcd' '--enable-smbclient' '--disable-oss' '--enable-crystalhd' '--enable-mmx' '--enable-sse' '--disable-neon' '--disable-altivec' 'build_alias=x86_64-linux-gnu' 'CFLAGS=-g -O2 -fdebug-prefix-map=/build/vlc-fpAdgn/vlc-3.0.11=. -fstack-protector-strong -Wformat -Werror=format-security ' 'LDFLAGS=-Wl,-z,relro -Wl,-z,now -Wl,--as-needed' 'CPPFLAGS=-Wdate-time -D_FORTIFY_SOURCE=2' 'CXXFLAGS=-g -O2 -fdebug-prefix-map=/build/vlc-fpAdgn/vlc-3.0.11=. -fstack-protector-strong -Wformat -Werror=format-security ' 'OBJCFLAGS=-g -O2 -fdebug-prefix-map=/build/vlc-fpAdgn/vlc-3.0.11=. -fstack-protector-strong -Wformat -Werror=format-security'
+creating audio output
+looking for audio output module matching "any": 6 candidates
+using library version 12.2.0
+ (compiled with version 12.2.0, protocol 32)
+PulseAudio server connection failure: Connection refused
+Available ALSA PCM devices:
+Discard all samples (playback) or generate zero samples (capture) (null)
+JACK Audio Connection Kit (jack)
+PulseAudio Sound Server (pulse)
+HDA Intel, CX20561 Analog Default Audio Device (default:CARD=Intel)
+HDA Intel, CX20561 Analog Default Audio Device (sysdefault:CARD=Intel)
+HDA Intel, CX20561 Analog Front speakers (front:CARD=Intel,DEV=0)
+HDA Intel, CX20561 Analog 2.1 Surround output to Front and Subwoofer speakers (surround21:CARD=Intel,DEV=0)
+HDA Intel, CX20561 Analog 4.0 Surround output to Front and Rear speakers (surround40:CARD=Intel,DEV=0)
+HDA Intel, CX20561 Analog 4.1 Surround output to Front, Rear and Subwoofer speakers (surround41:CARD=Intel,DEV=0)
+HDA Intel, CX20561 Analog 5.0 Surround output to Front, Center and Rear speakers (surround50:CARD=Intel,DEV=0)
+HDA Intel, CX20561 Analog 5.1 Surround output to Front, Center, Rear and Subwoofer speakers (surround51:CARD=Intel,DEV=0)
+HDA Intel, CX20561 Analog 7.1 Surround output to Front, Center, Side, Rear and Woofer speakers (surround71:CARD=Intel,DEV=0)
+HDA Intel, CX20561 Digital IEC958 (S/PDIF) Digital Audio Output (iec958:CARD=Intel,DEV=0)
+HDA Intel, CX20561 Analog Direct sample mixing device (dmix:CARD=Intel,DEV=0)
+HDA Intel, CX20561 Digital Direct sample mixing device (dmix:CARD=Intel,DEV=1)
+HDA Intel, CX20561 Analog Direct sample snooping device (dsnoop:CARD=Intel,DEV=0)
+HDA Intel, CX20561 Digital Direct sample snooping device (dsnoop:CARD=Intel,DEV=1)
+HDA Intel, CX20561 Analog Direct hardware device without any conversions (hw:CARD=Intel,DEV=0)
+HDA Intel, CX20561 Digital Direct hardware device without any conversions (hw:CARD=Intel,DEV=1)
+HDA Intel, CX20561 Analog Hardware device with all software conversions (plughw:CARD=Intel,DEV=0)
+HDA Intel, CX20561 Digital Hardware device with all software conversions (plughw:CARD=Intel,DEV=1)
+HDA Intel USB Stream Output (usbstream:CARD=Intel)
+ThinkPad Console Audio Control USB Stream Output (usbstream:CARD=ThinkPadEC)
+using audio output module "alsa"
+keeping audio output
+Creating an input for 'veruca_salt_number_one_blind.opus'
+using timeshift granularity of 50 MiB
+using default timeshift path
+`file:///home/sam/Code/Projects/vlc/git_repo/audiobook_prototype/veruca_salt_number_one_blind.opus' gives access `file' demux `any' path `/home/sam/Code/Projects/vlc/git_repo/audiobook_prototype/veruca_salt_number_one_blind.opus'
+creating demux: access='file' demux='any' location='/home/sam/Code/Projects/vlc/git_repo/audiobook_prototype/veruca_salt_number_one_blind.opus' file='/home/sam/Code/Projects/vlc/git_repo/audiobook_prototype/veruca_salt_number_one_blind.opus'
+looking for access_demux module matching "file": 17 candidates
+no access_demux modules matched
+creating access: file:///home/sam/Code/Projects/vlc/git_repo/audiobook_prototype/veruca_salt_number_one_blind.opus
+ (path: /home/sam/Code/Projects/vlc/git_repo/audiobook_prototype/veruca_salt_number_one_blind.opus)
+looking for access module matching "file": 28 candidates
+using access module "filesystem"
+looking for stream_filter module matching "prefetch,cache_read": 26 candidates
+Using stream method for AStream*
+starting pre-buffering
+received first data after 0 ms
+pre-buffering done 1024 bytes in 0s - 34482 KiB/s
+using stream_filter module "cache_read"
+looking for stream_filter module matching "any": 26 candidates
+Trying Lua scripts in /home/sam/.local/share/vlc/lua/playlist
+Trying Lua scripts in /usr/lib/x86_64-linux-gnu/vlc/lua/playlist
+Trying Lua playlist script /usr/lib/x86_64-linux-gnu/vlc/lua/playlist/anevia_streams.luac
+Trying Lua playlist script /usr/lib/x86_64-linux-gnu/vlc/lua/playlist/anevia_xml.luac
+Trying Lua playlist script /usr/lib/x86_64-linux-gnu/vlc/lua/playlist/appletrailers.luac
+Trying Lua playlist script /usr/lib/x86_64-linux-gnu/vlc/lua/playlist/bbc_co_uk.luac
+Trying Lua playlist script /usr/lib/x86_64-linux-gnu/vlc/lua/playlist/cue.luac
+Trying Lua playlist script /usr/lib/x86_64-linux-gnu/vlc/lua/playlist/dailymotion.luac
+Trying Lua playlist script /usr/lib/x86_64-linux-gnu/vlc/lua/playlist/jamendo.luac
+Trying Lua playlist script /usr/lib/x86_64-linux-gnu/vlc/lua/playlist/koreus.luac
+Trying Lua playlist script /usr/lib/x86_64-linux-gnu/vlc/lua/playlist/liveleak.luac
+Trying Lua playlist script /usr/lib/x86_64-linux-gnu/vlc/lua/playlist/newgrounds.luac
+Trying Lua playlist script /usr/lib/x86_64-linux-gnu/vlc/lua/playlist/rockbox_fm_presets.luac
+Trying Lua playlist script /usr/lib/x86_64-linux-gnu/vlc/lua/playlist/soundcloud.luac
+Trying Lua playlist script /usr/lib/x86_64-linux-gnu/vlc/lua/playlist/twitch.luac
+Trying Lua playlist script /usr/lib/x86_64-linux-gnu/vlc/lua/playlist/vimeo.luac
+Trying Lua playlist script /usr/lib/x86_64-linux-gnu/vlc/lua/playlist/vocaroo.luac
+Trying Lua playlist script /usr/lib/x86_64-linux-gnu/vlc/lua/playlist/youtube.luac
+Trying Lua scripts in /usr/share/vlc/lua/playlist
+no stream_filter modules matched
+looking for stream_directory module matching "any": 1 candidates
+no stream_directory modules matched
+attachment of directory-extractor failed for file:///home/sam/Code/Projects/vlc/git_repo/audiobook_prototype/veruca_salt_number_one_blind.opus
+looking for stream_filter module matching "record": 26 candidates
+using stream_filter module "record"
+creating demux: access='file' demux='any' location='/home/sam/Code/Projects/vlc/git_repo/audiobook_prototype/veruca_salt_number_one_blind.opus' file='/home/sam/Code/Projects/vlc/git_repo/audiobook_prototype/veruca_salt_number_one_blind.opus'
+looking for demux module matching "ogg": 55 candidates
+File length is 3541693 bytes
+found opus header, channels: 2, pre-skip: 3840
+beginning of a group of logical streams
+using demux module "ogg"
+looking for a subtitle file in /home/sam/Code/Projects/vlc/git_repo/audiobook_prototype/
+looking for meta reader module matching "any": 2 candidates
+using meta reader module "taglib"
+removing module "taglib"
+`file:///home/sam/Code/Projects/vlc/git_repo/audiobook_prototype/veruca_salt_number_one_blind.opus' successfully opened
+selecting program id=0
+looking for audio decoder module matching "any": 21 candidates
+using audio decoder module "opus"
+Buffering 0%
+Opus audio with 2 channels
+reusing audio output
+Buffering 0%
+Buffering 92%
+Stream buffering done (1920 ms in 0 ms)
+using ALSA device: default
+ Plug PCM: Soft volume PCM
+Control: PCM Playback Volume
+min_dB: -51
+max_dB: 0
+resolution: 256
+Slave: Direct Stream Mixing PCM
+Hardware PCM card 0 'HDA Intel' device 0 subdevice 0
+Its setup is:
+  stream       : PLAYBACK
+  access       : MMAP_INTERLEAVED
+  format       : S32_LE
+  subformat    : STD
+  channels     : 2
+  rate         : 48000
+  exact rate   : 48000 (48000/1)
+  msbits       : 32
+  buffer_size  : 16384
+  period_size  : 1024
+  period_time  : 21333
+  tstamp_mode  : ENABLE
+  tstamp_type  : MONOTONIC
+  period_step  : 1
+  avail_min    : 1024
+  period_event : 0
+  start_threshold  : 1
+  stop_threshold   : 4611686018427387904
+  silence_threshold: 0
+  silence_size : 4611686018427387904
+  boundary     : 4611686018427387904
+  appl_ptr     : 0
+  hw_ptr       : 0
+ device name   : CX20561 Analog
+ device ID     : CX20561 Analog
+ subdevice name: subdevice #0
+initial hardware setup:
+ACCESS:  MMAP_INTERLEAVED MMAP_NONINTERLEAVED MMAP_COMPLEX RW_INTERLEAVED RW_NONINTERLEAVED
+FORMAT:  S8 U8 S16_LE S16_BE U16_LE U16_BE S24_LE S24_BE U24_LE U24_BE S32_LE S32_BE U32_LE U32_BE FLOAT_LE FLOAT_BE FLOAT64_LE FLOAT64_BE MU_LAW A_LAW IMA_ADPCM S20_LE S20_BE U20_LE U20_BE S24_3LE S24_3BE U24_3LE U24_3BE S20_3LE S20_3BE U20_3LE U20_3BE S18_3LE S18_3BE U18_3LE U18_3BE
+SUBFORMAT:  STD
+SAMPLE_BITS: [4 64]
+FRAME_BITS: [4 640000]
+CHANNELS: [1 10000]
+RATE: 48000
+PERIOD_TIME: (21333 21334)
+PERIOD_SIZE: 1024
+PERIOD_BYTES: [512 81920000]
+PERIODS: [2 16]
+BUFFER_TIME: (42666 341334)
+BUFFER_SIZE: [2048 16384]
+BUFFER_BYTES: [1024 1310720000]
+TICK_TIME: ALL
+using channels map 0, type 1, 2 channel(s)
+final HW setup:
+ACCESS:  RW_INTERLEAVED
+FORMAT:  FLOAT_LE
+SUBFORMAT:  STD
+SAMPLE_BITS: 32
+FRAME_BITS: 64
+CHANNELS: 2
+RATE: 48000
+PERIOD_TIME: (21333 21334)
+PERIOD_SIZE: 1024
+PERIOD_BYTES: 8192
+PERIODS: 16
+BUFFER_TIME: (341333 341334)
+BUFFER_SIZE: 16384
+BUFFER_BYTES: 131072
+TICK_TIME: 0
+initial software parameters:
+tstamp_mode: NONE
+tstamp_type: MONOTONIC
+period_step: 1
+avail_min: 1024
+start_threshold: 1
+stop_threshold: 16384
+silence_threshold: 0
+silence_size: 0
+boundary: 4611686018427387904
+final software parameters:
+tstamp_mode: NONE
+tstamp_type: MONOTONIC
+period_step: 1
+avail_min: 1024
+start_threshold: 1
+stop_threshold: 16384
+silence_threshold: 0
+silence_size: 0
+boundary: 4611686018427387904
+device cannot be paused
+output 'f32l' 48000 Hz Stereo frame=1 samples/8 bytes
+looking for audio volume module matching "any": 2 candidates
+using audio volume module "float_mixer"
+input 'f32l' 48000 Hz Stereo frame=1 samples/8 bytes
+looking for audio filter module matching "scaletempo": 16 candidates
+format: 48000 rate, 2 nch, 4 bps, fl32
+params: 30 stride, 0.200 overlap, 14 search
+1.000 scale, 1440.000 stride_in, 1440 stride_out, 1152 standing, 288 overlap, 672 search, 2400 queue, fl32 mode
+using audio filter module "scaletempo"
+conversion: 'f32l'->'f32l' 48000 Hz->48000 Hz Stereo->Stereo
+conversion pipeline complete
+conversion: 'f32l'->'f32l' 48000 Hz->48000 Hz Stereo->Stereo
+conversion pipeline complete
+looking for audio resampler module matching "any": 4 candidates
+using audio resampler module "samplerate"
+Decoder wait done in 63 ms
+inserting 431 zeroes
+Buffering 0%
+Buffering 34%
+Buffering 68%
+Stream buffering done (3000 ms in 3 ms)
+end of audio preroll
+Decoder wait done in 12 ms
+Buffering 0%
+Buffering 34%
+Buffering 68%
+Stream buffering done (3000 ms in 1 ms)
+end of audio preroll
+Decoder wait done in 21 ms
+Buffering 0%
+Buffering 34%
+Buffering 68%
+Stream buffering done (3000 ms in 1 ms)
+end of audio preroll
+Decoder wait done in 33 ms
+Buffering 0%
+Buffering 34%
+Buffering 68%
+Stream buffering done (3000 ms in 1 ms)
+end of audio preroll
+Decoder wait done in 9 ms
+Buffering 0%
+Buffering 34%
+Buffering 68%
+Stream buffering done (3000 ms in 2 ms)
+end of audio preroll
+Decoder wait done in 23 ms
+Buffering 0%
+Buffering 34%
+Buffering 68%
+Stream buffering done (3000 ms in 2 ms)
+end of audio preroll
+Decoder wait done in 28 ms
+Buffering 0%
+Buffering 34%
+Buffering 68%
+Stream buffering done (3000 ms in 3 ms)
+end of audio preroll
+Decoder wait done in 11 ms
+Buffering 0%
+Buffering 34%
+Buffering 68%
+Stream buffering done (3000 ms in 1 ms)
+end of audio preroll
+Decoder wait done in 20 ms
+Buffering 0%
+Buffering 34%
+Buffering 68%
+Stream buffering done (3000 ms in 3 ms)
+end of audio preroll
+Decoder wait done in 9 ms
+Buffering 0%
+Buffering 34%
+Buffering 68%
+Stream buffering done (3000 ms in 3 ms)
+end of audio preroll
+Decoder wait done in 11 ms
+Buffering 0%
+Buffering 34%
+Buffering 68%
+Stream buffering done (3000 ms in 1 ms)
+end of audio preroll
+Decoder wait done in 16 ms
+Buffering 0%
+Buffering 34%
+Buffering 68%
+Stream buffering done (3000 ms in 3 ms)
+end of audio preroll
+Decoder wait done in 15 ms
+Buffering 0%
+Buffering 34%
+Buffering 68%
+Stream buffering done (3000 ms in 1 ms)
+end of audio preroll
+Decoder wait done in 20 ms
+Buffering 0%
+Buffering 34%
+Buffering 68%
+Stream buffering done (3000 ms in 1 ms)
+end of audio preroll
+Decoder wait done in 29 ms
+killing decoder fourcc `Opus'
+removing module "opus"
+removing module "samplerate"
+removing module "scaletempo"
+removing module "float_mixer"
+keeping audio output
+removing module "ogg"
+Program doesn't contain anymore ES
+removing module "record"
+removing module "cache_read"
+removing module "filesystem"
+removing module "alsa"
+exiting
+no exit handler
+removing all interfaces
+removing module "memory"
