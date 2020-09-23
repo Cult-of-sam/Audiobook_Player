@@ -1,0 +1,15 @@
+1. Random drawings and letters etc get drawn randomly in random places if forwarding/rewinding the audio for a long time and messes up the format
+   and for some reason these random drawings by ncurses is not being erased like it should be in the loop.
+
+2. CPU usage at worst case scenario is jumping to 30%, which is because nonblocking is turned off, thus the the program is always executing some
+   code in the MAIN_LOOP function. However if we turn on blocking, The program will halt to wait for user input, and thus reduce cpu usage, such
+   that worst case CPU usage is 20%. The code already written has been catered for blocking IO, which is why the redrawing etc, is done at the beginning
+   of the loop before waiting to get input, otherwise whatever gets written after will be cleared once the loop goes back around. I've been
+   messing around with nonblocking to try and get the redrawings to work to try and fix issue .1 to no avail it seems.
+
+
+3. Optimise the threads better, in terms of when to sleep and when not to sleep and for how long etc, so everything can function correctly. As I think the
+   reason why issue .1 occurs is because the main program sometimes doesn't get the time to perform the redraws thanks to the timer thread, 
+   but that's just a theory.
+
+
